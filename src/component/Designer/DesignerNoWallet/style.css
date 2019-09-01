@@ -1,0 +1,25 @@
+.DesignerNoWallet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+.DesignerNoWalletBox{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.DesignerNoWallet img{
+    width: 90px;
+    margin-bottom: 20px;
+}
+.DesignerNoWallet h1{
+    font-size: 28px;
+    color: #b6b6b6;
+    margin-bottom: 10px;
+}

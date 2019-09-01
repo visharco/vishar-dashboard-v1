@@ -1,0 +1,71 @@
+.MessageBox{
+    display: flex;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #f6f6f6;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all .2s linear;
+    cursor: pointer;
+    flex-direction: row;
+}
+.MessageBox:hover{
+    background-color: #efefef;
+    box-shadow: 0px 5px 5px 0px #8080802b;
+
+    transition: all .1s linear;
+}
+
+
+.MB-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.MB-right img{
+    width: 80px;
+    height: 80px;
+    border: 2px solid #bebebe;
+    border-radius: 50%;
+    box-shadow: 0px 6px 6px 1px #c5c5c5;
+}
+
+.MB-text{
+    width: 80%;
+    color: #555;
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.MB-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
+
+}
+.MB-name{
+    color: #c3c3c3;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.MB-date{
+    color: #888;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+
+
+@media screen and (max-width: 500px){
+    .MessageBox{
+        flex-direction: column;
+    }
+}

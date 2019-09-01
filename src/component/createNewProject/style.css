@@ -1,0 +1,1064 @@
+
+.CreateNewProject{
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    padding:40px 30px;
+    position: relative;
+}
+.CNP-title{
+    font-size: 25px;
+    font-weight: 900;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    direction: rtl;
+    color: #bababa;
+}
+.CNP-body{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.CNP-1 , .CNP-2 , .CNP-3 , .CNP-4 , .CNP-5 , .CNP-6{
+    right: -2000px;
+    transition: all .5s linear;
+}
+
+.CNP-2 , .CNP-3 , .CNP-4 , .CNP-5 , .CNP-6{
+    position: fixed;
+}
+
+
+
+.CNP-btnBox-fixed{
+    box-shadow: -1px 4px 11px 0px #ececec;
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+    background-color: #fff;
+    position: fixed;
+    bottom: 50px;
+    max-width: 700px;
+    min-width: 50%;
+    z-index: 1;
+    right: 300px;
+    left: 50px;
+}
+.CNP-btnBox-regular{
+    box-shadow: -1px 4px 11px 0px #ececec;
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+    background-color: #fff;
+    position: unset;
+}
+
+.CNP-100{
+    display: flex;
+}
+.CNP-100 img{
+width: 40px;
+}
+.CNP-100 p{
+    display: flex;
+    flex-direction: column;
+    color: #727272;
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.CNP-100 p span:nth-child(1){
+}
+.CNP-100 p span:nth-child(2){
+    font-size: 10px;
+}
+
+.CNP-BTNS{
+    display: flex
+}
+.nextBTN , .paymentBTN {
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #959595;
+    color: #fff;
+    font-weight: 900;
+    transition: all .2s linear;
+}
+
+.nextBTN:hover{
+    background-color: #777;
+    transition: all .2s linear;
+}
+.paymentBTN{
+    background-color: #0090CF;
+}
+.paymentBTN:hover{
+    transition: all .2s linear;
+    background-color: #097aab;
+}
+
+
+.prevBTN{
+    cursor: pointer;
+    background-color: transparent;
+    color: #dbdbdb;
+    width: 100px;
+    font-weight: 900;
+    transition: all .2s linear;
+    display: flex;
+    display: flex;
+    align-items: center;
+}
+
+
+.prevBTN:hover{
+    color: #777;
+    transition: all .2s linear;
+
+}
+.prevBTN  img{
+    transform: rotate(180deg);
+    margin-left: 10px;
+    width: 15px;
+}
+
+.notFixCreateBtn{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+.fixCreateBtn{
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.CNP1-category{
+    padding: 50px 0px;
+    border-bottom: 2px solid #EBEBEB;
+}
+
+.CNP1-category h1{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.CNP-logoBox{
+    width: 200px;
+    height: 200px;
+    background-color: #f6f6f6;
+    margin: 10px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 5px;
+    border: 2px solid #f2f2f2;
+    cursor: pointer;
+}
+.CNP-logoBoxTitle{
+    font-size: 10px;
+    font-weight: 900;
+    color: #666;
+    transition: all .2s linear;
+    text-align: center;
+    
+
+}
+.CNP-1-radio{
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 0;
+}
+
+
+/* RADIOBUTTON */
+
+
+.CNP-1-radio .input-hidden {
+    position: absolute;
+    left: -9999px;
+  }
+  
+.CNP-1-radio  input[type=radio]:checked + label > .CNP-logoBox {
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+  /* Stuff after this is only to make things more pretty */
+
+.CNP-1-radio  input[type=radio]:checked + label > .CNP-logoBox {
+    background-color: #7db5ce;
+}
+.CNP-logoBox{
+    width: 150px;
+    height: 150px;
+    transition: 500ms all;
+    padding: 25px;
+    background-color: #f6f6f6;
+  }
+.CNP-logoBox:hover{
+    background-color: #fff;
+    transition: all .2s linear;
+
+}
+  
+.plan-container-cover {
+    width: 28%;
+
+}
+
+/* //RADIO BOX  END */
+
+
+.CNP-1-Note{
+    padding: 20px;
+    background-color: #fff48f;
+    border-radius: 5px;
+    margin: 10px 0;
+
+}
+
+.CNP-1-Note h1  {
+    font-size: 15px;
+    color: #333333;
+}
+.CNP-1-Note p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #747474;
+}
+
+
+
+.CNP-desc-texts{
+    text-align: right;
+    padding: 50px;
+}
+
+.CNP-desc-text{
+    padding: 50px 0px;
+    border-bottom: 2px solid #eee;
+    display: flex;
+    flex-direction: column;
+}
+.CNP-desc-text h1{
+    color: #666;
+    font-size: 18px;
+}
+.CNP-desc-text p{
+    font-size: 16px;
+    color: #555;
+}
+.CNP-desc-down {
+    min-height: 800px;
+}
+
+.CNP-desc-box{
+    display:flex;
+    justify-content: flex-end;
+    border-bottom: 2px solid #eee;
+}
+.CNP-desc-title:nth-child(1),
+.CNP-desc-title:nth-child(2){
+    background-color: #f1f1f1;
+}
+
+
+.CNP-desc-title{
+    font-size: 16px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #D8D8D8;
+    margin: 0px 0px 0px 10px;
+    height: 50px;
+    line-height: 55px;
+    padding: 0px 30px;
+    color: #333;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all .2s linear;
+    position: relative;
+}
+.CNP-desc-number{
+    position: absolute;
+    top: 5px;
+    right: 4px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 900;
+    background-color: #C50143;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 4px;
+}
+.CNP-desc-title:hover{
+   opacity: .7;
+    transition: all .2s linear;
+}
+.CNP-desc-texts:nth-child(2) ,
+.CNP-desc-texts:nth-child(3) {
+    display: none;
+}
+
+
+.CNP-profile{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.CNP-colors{
+    margin: 20px auto;
+    width: 80%;
+}
+.CNP-fonts , .CNP-attachs {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 40px;
+}
+.CNP-attachs {
+    justify-content: flex-end;
+}
+.CNP-font{
+display: flex;
+flex-direction: column;
+align-items: center;
+cursor: pointer;
+transition: all .2s linear;
+
+}
+.CNP-font:hover{
+    transition: all .2s linear;
+    opacity: .6;
+}
+
+.CNP-font img {
+    width: 25%;
+    height: 200px;
+    background-color: #f5f5f5;
+    padding: 50px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    min-width: 200px;
+}
+
+
+
+ 
+
+.CNP-desc-text h2{
+    font-size: 15px;
+    color: #959595;
+    margin-top: 5px;
+}
+
+
+
+.CNP-design{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0px;
+}
+
+.CNP-design img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s linear;
+
+}
+.CNP-design img:hover{
+    opacity: .6;
+    transition: all .2s linear;
+
+}
+
+.font-padding{
+    padding: 20px;
+}
+
+/* CHECKBOX */
+
+
+.CNP-check-color ul {
+    list-style-type: none;
+}
+  
+.CNP-check-color li {
+    display: inline-block;
+}
+
+.CNP-check-color input[type="checkbox"] {
+    display: none;
+}
+
+.CNP-check-color label {
+    /* border: 1px solid #fff; */
+    padding: 10px;
+    display: block;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CNP-check-color label:before {
+    background-color: #6FCF97;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 42px;
+    right: 21px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+    z-index: 1;
+    font-size: 22px;
+}
+
+.CNP-check-color label img {
+    height: 150px;
+    width: 150px;
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+    border: 4px solid transparent;
+    transition: all .2s linear;
+    -moz-window-dragging: none;
+    -webkit-user-drag: none;
+}
+.CNP-check-color label span {
+    font-weight: 900;
+    color: #999;
+}
+.CNP-check-color label:hover img {
+    transition: all .2s linear;
+    border: 4px solid #6FCF97;
+}
+.CNP-check-color :checked + label {
+    border-color: #ddd;
+}
+
+.CNP-check-color :checked + label:before {
+    content: "✓";
+    background-color: #6FCF97;
+    transform: scale(1);
+}
+
+.CNP-check-color :checked + label img {
+    transform: scale(1);
+    z-index: 0;
+    border: 4px solid #6FCF97;
+}
+
+/* ====================== */
+
+.CNP-check-font ul {
+    list-style-type: none;
+}
+  
+.CNP-check-font li {
+    display: inline-block;
+}
+
+.CNP-check-font input[type="checkbox"] {
+    display: none;
+}
+
+.CNP-check-font label {
+    /* border: 1px solid #fff; */
+    padding: 10px;
+    display: block;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CNP-check-font label:before {
+    background-color: #6FCF97;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 21px;
+    right: 21px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+    z-index: 1;
+    font-size: 22px;
+}
+
+.CNP-check-font label img {
+    height: 150px;
+    width: 150px;
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+    border: 4px solid transparent;
+    transition: all .2s linear;
+    -moz-window-dragging: none;
+    -webkit-user-drag: none;
+}
+.CNP-check-font label span {
+    font-weight: 900;
+    color: #999;
+}
+.CNP-check-font label:hover img {
+    transition: all .2s linear;
+    border: 4px solid #6FCF97;
+}
+.CNP-check-font :checked + label {
+    border-color: #ddd;
+}
+
+.CNP-check-font :checked + label:before {
+    content: "✓";
+    background-color: #6FCF97;
+    transform: scale(1);
+}
+
+.CNP-check-font :checked + label img {
+    transform: scale(1);
+    z-index: 0;
+    border: 4px solid #6FCF97;
+}
+
+.CNP-project-title , .CNP-description , .CNP-other-desc , .CNP-upload {
+    padding: 20px 0px;
+}
+.CNP-project-title .Inputbox{
+margin-bottom: 5px;
+}
+.CNP-project-title p , .CNP-description p , .CNP-other-desc p , .CNP-upload > p{
+    font-size: 13px;
+    font-weight: 500;
+    color: #bbb;
+}
+.CNP-description .Inputbox , .CNP-other-desc  .Inputbox{
+    margin-bottom: 0px;
+}
+
+
+.CNP-upload > div{
+    width: 100%;
+    background-color: #f9f9f9;
+    border-radius: 30px;
+    border: 2px dashed #cbcbcb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    color: #959595;
+    transition: all .2s linear;
+    margin: 20px 0px 10px;
+    padding: 20px 0px;
+}
+.CNP-upload > div h1{
+    color: #686868;
+    font-size: 28px;
+    font-weight: 400;
+}
+.CNPU-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px dashed #cacaca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.CNPU-img img{
+width: 50%;
+}
+.CNPU-text {
+    color: #959595;
+}
+
+
+/*   radio button design package */
+
+
+.CNP-select-design{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+
+ .CNP-select-design input[type="radio"] {
+    display: none;
+  }
+ .CNP-select-design input[type="radio"]:not(:disabled) ~ label {
+    cursor: pointer;
+  }
+ .CNP-select-design input[type="radio"]:disabled ~ label {
+    color: #bcc2bf;
+    border-color: #bcc2bf;
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+  
+ .CNP-select-design label { 
+    /* height: 450px; */
+    display: block;
+    background: #f1f1f1;
+    border-radius: 20px;
+    padding: 2rem 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    box-shadow: -1px 8px 14px 0px rgba(208, 208, 208, 0.43);
+    position: relative;
+    transition: all .2s linear;
+  }
+ .CNP-select-design label:hover {
+    background-color: #f9f9f9;
+    transition: all .2s linear;
+ }
+  
+ .CNP-select-design input[type="radio"]:checked + label {
+    background: #ebebeb;
+    color: white;
+  }
+ .CNP-select-design input[type="radio"]:checked + label .CNP-SD-end {
+    background-color: #0090CF;
+    color:#fff;
+ }
+ .CNP-select-design input[type="radio"]:checked + label .CNP-SD-end::after {
+    color: #0090CF;
+    font-family: FontAwesome;
+    content: "\2713";
+    position: absolute;
+    top: 3px;
+    left: 24px;
+    transform: translateX(-50%);
+    height: 40px;
+    width: 40px;
+    line-height: 43px;
+    text-align: center;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.25);
+    font-size: 33px;
+  }
+  
+
+ .CNP-select-design input[type="radio"]:checked + label .CNP-SD-middle p{
+    border-top: 1px solid #f8f8f8;
+} 
+
+
+.CNP-label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.CNP-SD-title{
+    display: flex;
+    flex-direction: column;
+}
+
+.CNP-SD-title h1{
+
+}
+
+.CNP-SD-title h2{
+    color: #b1b1b1;
+    font-weight: 500;
+}
+
+.CNP-SD-middle{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+.CNP-SD-middle p{
+    padding: 10px 0px;
+border-top: 1px solid #f9f9f9;
+color: #666;
+font-size: 16px;
+font-weight: 200;
+}
+
+
+.CNP-SD-end{
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    position: relative;
+    width: 90%;
+    border-radius: 30px;
+    background-color: white;
+    border: 2px solid #0090CF;
+    height: 50px;
+    line-height: 50px;
+    color: #333;
+
+}
+
+.CNP-attach-file-view-container {
+    display: flex;
+
+}
+
+.CNP-file-attach-view {
+    border-radius: 5px;
+    border: 2px solid #e5e5e5;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+
+}
+
+.tests { 
+   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.CNP-image-uploader {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* radio button duration */
+
+.CNP-duration{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+
+ .CNP-duration input[type="radio"] {
+    display: none;
+  }
+ .CNP-duration input[type="radio"]:not(:disabled) ~ label {
+    cursor: pointer;
+  }
+ .CNP-duration input[type="radio"]:disabled ~ label {
+    color: #bcc2bf;
+    border-color: #bcc2bf;
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+  
+ .CNP-duration label {
+     width:150px;
+    height: 150px;
+    display: block;
+    background: white;
+    margin-bottom: 1rem;
+    text-align: center;
+    box-shadow: -1px 8px 14px 0px rgba(208, 208, 208, 0.43);
+  }
+ .CNP-duration label:hover .CNPD-title {
+    background-color: #fff;
+ }
+ .CNP-duration input[type="radio"]:checked + label {
+    background: #ebebeb;
+    color: white;
+    transition: all .2s linear;
+
+  }
+ .CNP-duration input[type="radio"]:checked + label .CNPD-title {
+    background-color: #fff;
+    border: 3px solid #6FCF97;
+    transition: all .2s linear;
+
+ }
+ .CNPD-title::after{
+    transition: all .2s linear;
+
+ }
+ .CNP-duration input[type="radio"]:checked + label .CNPD-title::after {
+    color: #fff;
+    font-family: FontAwesome;
+    content: "\2713";
+    position: absolute;
+    bottom: 3px;
+    right: -13px;
+    transform: translateX(-50%);
+    height: 30px;
+    width: 30px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.25);
+    font-size: 24px;
+    background-color: #6FCF97;
+    transition: all .2s linear;
+  }
+
+
+.CNP-duration{
+    display: flex;
+    justify-content: space-around;
+    transition: all .2s linear;
+}
+
+  .CNPD-title{
+    background-color: #f9f9f9;
+    border: 3px solid transparent;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.CNPD-title h1{
+    color: #969696;
+}
+
+.CNPD-title p{
+    color: #686868
+
+}
+
+
+.CNP-invoice{
+    padding: 50px 0px 100px;
+    border-bottom: 2px solid #eee;
+}
+
+.CNP-invoice h1{
+    text-align: center;
+    background-color: #dedede;
+    border-radius: 5px 5px 0px 0px;
+    font-size: 18px;
+    height: 60px;
+    line-height: 60px;
+    color: #555;
+}
+
+.CNP-invoice ul{
+padding: 10px 5px;
+
+}
+
+.CNP-invoice ul li {
+    border-bottom: 1px solid #f9f9f9;
+    color: #555;
+    font-size: 16px;
+    padding: 15px;
+}
+.CNP-invoice ul li span{
+    color: #333;
+}
+
+.CNP-invoice p {
+    text-align: center;
+    background-color: #dedede;
+    border-radius: 0px 0px 5px 5px;
+    color: #555;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    line-height: 60px;
+}
+
+.CNP-invoice p h2 {
+    color: #555;
+    font-size: 22px;
+}
+
+
+@media screen and (max-width: 1100px){
+    .CNP-select-design label{
+        width: 100%;
+    }
+    .CNP-btnBox-fixed{
+        right: 280px;
+        left: 30px;
+        width: unset;
+        max-width: unset;
+        min-width: unset;
+    }
+
+
+}
+
+@media screen and (max-width: 900px){
+
+    .CNP-duration label{
+        width: 40%;
+    }
+    .CNP-duration{
+        flex-wrap: wrap;
+    }
+    .CNP-btnBox-fixed{
+        right: 20px;
+        left: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 700px){
+    .CreateNewProject{
+        padding: 15px;
+    }
+    .CNP-select-design{
+        flex-direction: column;
+        align-items: center;
+    }
+    .CNP-select-design label{
+        width: 100%;
+    }
+    .nextBTN , .paymentBTN{
+        width: 70px;
+    }
+    .prevBTN{
+        width: 80px;
+    }
+    .CNP-btnBox-fixed{
+        bottom: 10px;
+        margin: 0px;
+    }
+    .plan-container-cover {
+        width: 100%!important;
+        line-height: 3;
+    
+    }
+
+
+}
+
+
+@media screen and (max-width: 500px){
+    .CNP-duration{
+        display: flex;
+        flex-direction: column;
+
+    }
+ 
+  
+    .selector-container {
+       width: 100%;
+        margin: 10px 0;
+    
+    }
+.CNP-1-radio{
+    justify-content: center;
+}
+.CNP-logoBox{
+    width: 264px;
+    height: 200px; 
+
+}
+
+.CNP-logoBox span{ 
+    font-size: 16px;
+    padding: 5px 0;
+
+
+}
+.CNP-btnBox-fixed  {
+    flex-direction: column;
+}
+.CNP-btnBox-regular {
+    flex-direction: column;
+    width: 100%;
+}
+.CNP-BTNS{
+    margin-top: 20px;
+    width: 100%;
+}
+.CNP-check-color li , .CNP-check-font li    {
+    display: flex;
+    justify-content: center;
+}
+.CNP-check-color label img{
+    width: 200px;
+    height: 200px;
+}
+.nextBTN , .prevBTN , .paymentBTN{
+    width:50%;
+    justify-content: center;
+}
+.nextBTN1{
+    width: 100%;
+}
+.CNP-desc-text p{
+    text-align: center;
+    padding: 0px 10px;
+    font-size: 12px;
+}
+.CNP-select-design label{
+    width: 100%;
+}
+
+.CNP-duration label{
+    width: 100%;
+
+}
+.CNP-invoice p h2{
+    font-size: 18px;
+}
+
+}

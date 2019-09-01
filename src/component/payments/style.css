@@ -1,0 +1,87 @@
+
+.Payments {
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    padding: 30px;
+}
+
+.PS-title {
+    font-size: 25px;
+    font-weight: 900;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    direction: rtl;
+    color: #bababa;
+}
+
+.PS-box {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.PSB-title, .PSB-body {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: -1px 4px 11px 0px #ececec;
+
+}
+
+.body-child, .body-child1, .body-child2 {
+    color: #666;
+    
+}
+
+
+.title-child, .body-child {
+    width: calc((100% - 210px) / 6);
+    min-width: 100px;
+}
+
+.title-child1, .body-child1 {
+    min-width: 40px;
+}
+
+.title-child2, .body-child2 {
+    min-width: 170px;
+}
+
+.paymentsuccess {
+    color: #6FCF97 !important;
+}
+
+.paymentwarning {
+    color: #C50143 !important;
+}
+
+.paymentpending {
+    color: #F4D03F !important;
+}
+
+.paymentfailed {
+    color: #C50143 !important;
+}
+
+
+.Payments table {
+    width: 100%;
+    direction: rtl;
+    text-align: right;
+}
+
+.Payments th, .Payments td {
+    text-align: center;
+}
+
+.PS-box {
+    overflow-x: auto;
+} 

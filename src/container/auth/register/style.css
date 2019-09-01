@@ -1,0 +1,118 @@
+
+
+/* REGISTER */
+
+
+
+.forget-pass-text{
+    color: #ADADAD;
+}
+
+
+.change-page-text{
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+
+}
+.change-page-text span{
+    font-weight: 500;
+    color: #2D9CDB;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all .2s linear;
+
+}
+.change-page-text span:hover{
+    transition: all .2s linear;
+    color: rgb(106, 178, 219);
+}
+
+.R-checkbox{
+width: 100%;
+position: relative;
+}
+.R-checkbox p{
+margin: 10px 0px;
+}
+.R-checkbox span{
+    margin-right: 30px;
+    font-weight: 900;
+    font-size: 12px;
+}
+
+/* RADIO BTN  */
+
+.R-checkbox [type="radio"]:checked,
+.R-checkbox [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.R-checkbox [type="radio"]:checked + label,
+.R-checkbox [type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+.R-checkbox [type="radio"]:checked + label:before,
+.R-checkbox [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+.R-checkbox [type="radio"]:checked + label:after,
+.R-checkbox [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background: #2D9CDB;
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    border: 1px solid #bababa;
+}
+.R-checkbox [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.R-checkbox [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.type-person {
+    bottom: -27px;
+    margin: 0!important;
+    font-size: 10px!important;
+    font-weight: 700;
+    color: #fff;
+    user-select: none;
+    z-index: 4;
+    background-color: rgba(215, 83, 81, 0.8);
+    border-radius: 100px;
+    padding: 3px 10px;
+    height: 25px;
+    position: absolute;
+    right: 2px;
+    display: flex;
+    align-items: center;
+    font-weight: 500!important;
+}

@@ -1,0 +1,69 @@
+.cover{  
+    width: calc(100%);
+    height: 100vh;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    /* background: linear-gradient(25deg, #fcfcfc 10%,#5DADE2 20%, #3498DB 30%, #5DADE2 40%, #5DADE2 50%, #5499C7 66%, #aeaeae 100%); */
+    background: linear-gradient(25deg, #EC7063 10%,#9B59B6 20%, #2980B9 30%, #5DADE2 40%, #48C9B0 50%, #58D68D 66%, #F4D03F 100%);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+    background-color: #5499C7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+@keyframes gradient{
+    0% {
+        background-position: 0 92%;
+    }
+    50% {
+        background-position: 100% 9%;
+    }
+    100% {
+        background-position: 0 92%;
+    }
+}    
+
+.cover-text{
+    font-size: 65px;
+    color: #fff;
+    text-align: right;
+    font-weight: 900;
+    position: absolute;
+    right: 150px;
+    bottom: 50px;
+    text-shadow: -1px 5px 9px #0000006b;
+}
+.cover-text1 span{
+    font-size: 130px;
+    font-weight: 900;
+
+}
+.cover-text2{
+    font-size: 90px;
+}
+.per-month{
+    font-size: 28px;
+    width: 100%;
+    text-align: left;
+    margin-left: 50px;
+}
+
+
+
+@media screen and (max-width : 600px) {
+
+    .cover {
+      
+        height: 900px; 
+        justify-content: flex-start;
+ 
+    }
+     
+   
+}

@@ -1,0 +1,488 @@
+
+.DesignerProjectDetail{ 
+padding:40px 30px;
+}
+
+.DPD-title{
+    font-size: 25px;
+    font-weight: 900;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    direction: rtl;
+    color: #bababa;
+}
+
+
+.DPD-desc-up {
+    width: 100%;
+    padding: 0;
+    padding: 30px 0px 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border-bottom: 2px solid #eee;
+}
+
+.DPD-desc-texts{
+    text-align: right;
+    padding: 50px;
+}
+
+.DPD-desc-text{
+    padding: 40px 0px;
+    border-bottom: 2px solid #eee;
+    display: flex;
+    flex-direction: column;
+}
+.DPD-desc-text h1{
+    color: #666;
+    font-size: 18px;
+}
+.DPD-desc-text p{
+    font-size: 16px;
+    color: #555;
+}
+.DPD-desc-down {
+    min-height: 800px;
+    direction: rtl;
+}
+.DPD-submit-design{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    line-height: 40px;
+    background-color: #0090CF;
+    /* width: 150px; */
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 16px;
+    padding: 0px 20px;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+.DPD-submit-design:hover{
+    opacity: .7;
+    transition: all .2s linear;
+}
+.DPD-submit-design img{
+    margin-left: 20px;
+    width: 22px;
+}
+.DPD-desc-box{
+    display:flex;
+    justify-content: flex-end;
+}
+.DPD-desc-title:nth-child(1),
+.DPD-desc-title:nth-child(2){
+    background-color: #f1f1f1;
+}
+
+
+.DPD-desc-title{
+    font-size: 16px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #D8D8D8;
+    margin: 0px 0px 0px 10px;
+    height: 50px;
+    line-height: 55px;
+    padding: 0px 30px;
+    color: #333;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all .2s linear;
+    position: relative;
+}
+.DPD-desc-number{
+    position: absolute;
+    top: 5px;
+    right: 4px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 900;
+    background-color: #C50143;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 4px;
+}
+.DPD-desc-title:hover{
+   opacity: .7;
+    transition: all .2s linear;
+}
+.DPD-desc-texts:nth-child(2) ,
+.DPD-desc-texts:nth-child(3) {
+    display: none;
+}
+
+
+.DPD-profile{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.DPD-colors{
+    margin: 20px auto;
+    width: 80%;
+}
+.DPD-fonts , .DPD-attachs {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 40px;
+    cursor: pointer;
+}
+.DPD-attachs {
+    justify-content: flex-end;
+}
+.DPD-font{
+display: flex;
+flex-direction: column;
+align-items: center;
+cursor: pointer;
+transition: all .2s linear;
+
+}
+.DPD-font:hover{
+    transition: all .2s linear;
+    opacity: .6;
+}
+
+.DPD-font img {
+    width: 25%;
+    height: 200px;
+    background-color: #f5f5f5;
+    padding: 50px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    min-width: 200px;
+}
+
+
+.DPD-attach{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    margin: 0px 20px;
+    border-radius: 30px;
+}
+.attach-delete{
+    width: 40px;
+    background-color: #C50143;
+    padding: 7px;
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    transition: all .2s linear;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+.attach-delete:hover{
+    opacity: .6;
+    transition: all .2s linear;
+
+}    
+
+.DPD-desc-text h2{
+    font-size: 15px;
+    color: #555;
+    margin-top: 5px;
+}
+.contest{
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: -1px 4px 11px 0px #ececec;
+    border-radius: 10px;
+    border: 2px solid #f3f3f3;
+    margin-top: 20px;
+    color: #555;
+    align-items: center;    
+}
+.contest-DL{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #d2d2d2!important;
+    border-radius: 10px;
+    padding: 5px 30px!important;
+    font-size: 18px!important;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+.contest-DL:hover{
+    background-color: #eee;
+    transition: all .2s linear;
+}
+.contest-DL img{
+    width: 15px;
+    margin-right: 10px;
+}
+
+
+.DPD-design{
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+
+.DPD-design img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s linear;
+
+}
+
+.DPDD-box{
+    transition: all .2s linear;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: flex-start;
+    align-items: flex-start; 
+    width: calc(25% - 20px);
+    margin: 10px;
+
+}
+
+.DPDD-box img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s linear;
+    background-color: #aeaeae;
+
+}
+
+.DPDD-box > p {
+    color: #afafaf;
+    font-size: 14px;
+    margin-right: 11px;
+}
+.DPDD-box > p  > span{
+    font-weight: 900;
+    color: #666;
+}
+
+.font-padding{
+    padding: 20px;
+}
+
+/* CHECKBOX */
+
+
+.DPD-check ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+  
+.DPD-check li {
+    display: inline-block;
+    /* width: 20%; */
+}
+
+.DPD-check input[type="checkbox"] {
+    display: none;
+}
+
+.DPD-check label {
+    /* border: 1px solid #fff; */
+    padding: 10px;
+    display: block;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.DPD-check label:before {
+    background-color: #6FCF97;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 42px;
+    right: 30px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+    z-index: 1;
+    font-size: 22px;
+}
+
+.DPD-check label img {
+    height: 150px;
+    width: 150px;
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+    border: 4px solid transparent;
+    transition: all .2s linear;
+    -moz-window-dragging: none;
+    -webkit-user-drag: none;
+}
+.DPD-check label:hover img {
+    transition: all .2s linear;
+    border: 4px solid #6FCF97;
+}
+.DPD-check label span {
+    font-weight: 900;
+    color: #999;
+}
+.DPD-check :checked + label {
+    border-color: #ddd;
+}
+
+.DPD-check :checked + label:before {
+    content: "✓";
+    background-color: #6FCF97;
+    transform: scale(1);
+}
+
+.DPD-check :checked + label img {
+    transform: scale(1);
+    z-index: 0;
+    border: 4px solid #6FCF97;
+}
+
+
+ 
+@media screen and (max-width: 1300px){
+    .DPD-check li {
+        /* width: 33%; */
+    }
+    .DPDD-box{
+        width: calc(30% - 10px);
+    }
+
+}
+
+@media screen and (max-width: 1200px){
+    .DPD-check li {
+        /* width: 33%; */
+    }
+    .DPDD-box{
+        width: calc(28% - 10px);
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .DPD-check li {
+        /* width:33%; */
+    }
+
+
+}
+
+
+@media screen and (max-width: 700px){
+
+.DPD-desc-title{
+    font-size: 14px;
+}
+.DPD-desc-box1{
+    flex-direction: column;
+    position: relative;
+}
+.DPD-desc-box1 .button-box {
+    width: 180px;
+    margin: 0px auto ;
+    position: absolute;
+    top: -120px;
+    left: 0;
+}
+.DPD-desc-box1 .button-style {
+    width: 100%;
+}
+
+.DPD-attach{
+    width: 100px;
+    height: 100px;
+}
+.ProjectDetail{
+    padding: 15px;
+}
+.DPDD-box{
+    width: 100%;
+    align-items: center;
+}
+.DPDD-box img{
+    width: 60%;
+}
+}
+
+@media screen and (max-width: 500px){
+.DPD-check ul {
+    justify-content: center;
+}
+
+
+.DPD-desc-title{
+    padding: 0px 10px;
+}
+.DPD-desc-box{
+    margin-top: 10px;
+}
+.DPD-desc-texts{
+    padding: 20px;
+}
+.DPD-desc-text{
+    flex-direction: column;
+}
+
+.DPD-desc-text p {
+    padding:20px 0px 0px;
+    border: none;
+    /* border-top: 3px solid #D8D8D8; */
+    font-size: 14px;
+}
+.DPD-desc-text h1 {
+    padding: 0px;
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+.DPD-desc-down .container{
+    padding: 0px;
+}
+.contest{
+    flex-direction: column-reverse;
+}
+.contest-DL{
+    margin-top: 10px;
+
+}
+.DPD-attachs{
+    flex-direction: column;
+}
+.DPD-attach{
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+}
+
+.DPDD-box img{
+    width: 100%;
+}
+
+}

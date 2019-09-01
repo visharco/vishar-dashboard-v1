@@ -1,0 +1,25 @@
+.NoPaymentBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+.NoPaymentBoxBox{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.NoPaymentBox img{
+    width: 90px;
+    margin-bottom: 20px;
+}
+.NoPaymentBox h1{
+    font-size: 28px;
+    color: #b6b6b6;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,71 @@
+
+.DesignerPayments{
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    padding: 30px;
+}
+.DP-title{
+    font-size: 25px;
+    font-weight: 900;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    direction: rtl;
+    color: #bababa;
+}
+.DP-box{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.DPB-title , .DPB-body{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: -1px 4px 11px 0px #ececec;
+
+}
+
+.body-child , .body-child1 ,.body-child2{
+    color: #666;
+}
+
+
+.title-child , .body-child{
+    width: calc((100% - 40px)/4);
+    min-width: 150px;
+}
+
+.title-child1 , .body-child1{
+    min-width: 40px;
+}
+
+.paymentSuccess{
+    color: #6FCF97;
+}
+.paymentFail{
+    color:#C50143;
+}
+
+
+.Payments table {
+    width: 100%;
+    direction: rtl;
+    text-align: right;
+}
+  
+.Payments th, .Payments td {
+    text-align: center;
+}
+  
+.DP-box{
+   overflow-x:auto;
+} 

@@ -1,0 +1,46 @@
+.NoPortfilo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+.NoPortfiloBox{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.NoPortfilo img{
+    width: 90px;
+    margin-bottom: 20px;
+}
+.NoPortfilo h1{
+    font-size: 28px;
+    color: #b6b6b6;
+    margin-bottom: 10px;
+}
+
+.NoPortfilo p {
+font-size: 22;
+color: #bbb;
+font-weight: 500;
+}
+.NoPortfilo button{
+width: 150px;
+color: #fff;
+background-color: #dfdfdf;
+padding: 10px;
+border-radius: 5px;
+margin-top: 40px;
+transition: all .2s linear;
+font-size: 14px;
+font-weight: 500;
+}
+.NoPortfilo button:hover{
+    background-color: #b1b1b1;
+    transition: all .2s linear;
+}

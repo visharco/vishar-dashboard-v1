@@ -1,0 +1,332 @@
+.project{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #f7f7f7;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+.project:hover{
+    background-color: #FFFAE1;
+    box-shadow: 0px 5px 5px 0px #8080802b;
+
+    transition: all .1s linear;
+}
+
+.p-right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+}
+
+.p-right img{
+    min-height: 180px;
+    border: 2px solid #E7E7E7;
+    border-radius: 30px;
+
+}
+.p-right-title{
+    text-align: right;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 180px;
+    padding: 10px 0px;
+    direction: rtl;
+    width: 100%;
+    
+}
+.finish{
+    background-color: #6FCF97;
+    padding: 0px 15px;
+    font-weight: 900;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+
+}
+.working{
+    background-color: #56CCF2;
+    padding: 0px 15px;
+    font-weight: 900;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+.pending{
+    background-color: #F2C94C;
+    padding: 0px 15px;
+    font-weight: 900;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.p-right-text h1{
+    font-size: 20px;
+}
+
+.p-right-text{
+    width: 100%;
+}
+
+.p-right-tags{
+    display: flex;
+    direction: rtl;
+}
+.p-right-tags p{
+    border: 2px solid #ababab;
+    height: 30px;
+    width: unset;
+    min-width: 60px;
+    padding: 0px 20px;
+    font-weight: 900;
+    margin-left:10px; 
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    color: #ababab;
+    cursor: pointer;
+}
+.p-status-box{
+    display: flex;
+    margin-bottom: 10px;
+    align-content: space-between;
+
+
+}
+.Completed{
+    background-color: #6FCF97;
+    padding: 0px 15px;
+    font-weight: 900;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+
+}
+
+.image-of-project {
+    /* background-image: url('../../assets/icons/ly.svg'); */
+    width: 150px;
+    height: 150px;
+    /* background-color: #f8f8ff; */
+    border-radius: 5px;
+    box-shadow: 0 1px 8px #e8e8e8; 
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    opacity: .7;
+}
+
+.active{
+    background-color: #6FCF97;
+    padding: 0px 15px;
+    font-weight: 900;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+
+}
+.Working{
+    background-color: #56CCF2;
+    padding: 0px 15px;
+    font-weight: 900;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+.Pending{
+    background-color: #F2C94C;
+    padding: 0px 15px;
+    font-weight: 900;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.count-desgin { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #aeaeae;
+    border-radius: 50px;
+    margin-right: 10px;
+    padding: 0 25px;
+
+}
+.project-details-number {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.p-icons{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px 0px;
+    align-items: center;
+}
+.p-icons img{
+    width: 15px;
+    margin: 5px;
+}
+.p-icons p{
+    padding: 5px 0px;
+}
+
+.p-icon{
+    display: flex;
+    align-items: center;
+    text-align: right;
+    width: 100%;
+    justify-content: flex-end;
+}
+.p-desabled{
+    background-color: transparent !important;
+    color: #eee !important;
+    border: 2px solid #eee !important;
+}
+
+
+@media screen and (max-width: 1100px){
+
+    .p-right-text{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 1000px){
+
+.p-right-text h1 {
+    font-size: 15px;
+}
+.Completed , .Working , .Pending{
+    margin-right: 10px;
+}
+
+}
+
+@media screen and (max-width: 700px){
+
+    .project{
+        flex-direction: column-reverse;
+        padding: 0;
+        position: relative;
+    }
+    .p-left{
+        width: 100%;
+        position: unset;
+    }
+    .p-icons{
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .p-icon{
+        display: flex;
+    justify-content: center;
+    }
+    .p-right{
+        padding: 40px 20px 20px;
+    }
+    .p-right-text{
+        width: 100%;
+    }
+    .p-price{
+        top: 0; 
+        border-radius: 0px 0px 10px 0px;
+    }
+    .p-left .button-box{
+        width: 90%;
+        margin:0px auto;
+    }
+    .p-left .button-style{
+        width: 100%;
+    }
+    .p-right-text h1 {
+        font-size: 18px;
+    }
+    .p-right-text h1 {
+        font-size: 12px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px){
+
+    .p-status-box {
+        flex-direction: column;
+
+    }
+
+    .p-right{
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+    .p-right img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .p-price {
+        position: unset;
+        border-radius: 30px;
+        width: 90%;
+        border: 2px solid #ebebeb;
+        background-color: #f9f9f9;
+    }
+    .p-left{
+        align-items: center;
+    }
+    .p-icons{
+        padding: 0px;
+    }
+    .p-icons p{
+        font-size: 10px;
+    }
+    
+}

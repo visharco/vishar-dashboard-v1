@@ -1,0 +1,73 @@
+
+
+.loading-full-screen{
+
+    transition: all 200ms;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #ffffffe3; /* Fallback color */ 
+    z-index: 999999;
+    text-align: center;  
+
+
+    /* position: absolute;
+    width: 100%; 
+    height: 100vh;
+    background-color: #ffffffe3;
+    z-index: 9999;  */
+
+   
+
+}
+
+.loadingPercent{
+   width: 450px;
+   height: 20px;
+   border-radius: 3px;
+   background-color: #eaeaea;
+   margin: auto;
+   position: relative;
+
+}
+.lp {
+    width: 1%;
+    background-color: #3dcfc3;
+    height: 20px;  
+}
+
+
+
+
+.loading-container {
+  
+    z-index: 9999;
+    position: relative;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.loading-image {
+    width: 200px; 
+   
+    margin: auto;
+    -webkit-align-content: center;
+    align-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center; 
+
+
+    
+}
+
+.loading-full-screen h2 {
+    text-align: center;
+
+}

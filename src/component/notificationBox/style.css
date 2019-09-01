@@ -1,0 +1,76 @@
+
+.NotificationBox{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    direction: rtl;
+    padding: 30px;
+    background-color: #F4F4F4;
+    width: 90%;
+    margin: 0px auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 5px 0px #8080802b;
+}
+
+
+.NB-body{
+    width: 80%;
+    display: flex;
+
+}
+.NB-body p {
+    margin-right: 20px;
+}
+
+.NB-body span {
+    color: #2D9CDB;
+    margin-right: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all .2s linear;
+
+}
+.NB-body span:hover {
+    opacity: .6;
+    transition: all .2s linear;
+
+}
+.NB-bell{
+    width: 60px;
+    margin: 0px 10px;
+}
+
+.NB-close{
+    width: 30px;
+    padding: 5px;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.NB-close:hover{
+    transition: all .2s linear;
+    cursor: pointer;
+    opacity: .6;
+}
+
+@media screen and (max-width: 600px){
+    .NotificationBox{
+        position: relative;
+        width: 100%;
+    }
+    .NB-body{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .NB-close{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    .NB-body p{
+        margin: 0;
+        margin-top: 20px;
+    }
+}

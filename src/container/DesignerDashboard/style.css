@@ -1,0 +1,56 @@
+
+
+.DesignerDashboard{
+
+}
+
+.DesignerDashboard .container-fluid{
+    margin: 0px auto;
+    padding: 0;
+    background-color: #F8F8F8;
+    max-width: 1600px;
+}
+
+.DesignerDashboard .container{
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.DesignerDashboard-right{
+    background-color: #fff;
+    position: relative;
+    width: 250px;
+} 
+.DesignerDashboard-left{
+    width: calc(100% - 250px);
+    background-color: #fff;
+    height:calc(100vh - 80px);
+}
+
+@media screen and (max-width: 1100px){
+    .DesignerDashboard-left {
+        width: calc(100% - 250px);
+    }
+    .DesignerDashboard-right {
+        width: 250px;
+    }
+
+}
+@media screen and (max-width: 900px){
+.DesignerDashboard .container{
+    justify-content: space-around;
+
+}
+.DesignerDashboard-left{
+    width: 100%;
+}
+.DesignerDashboard-right{
+    width: unset;
+}
+
+}

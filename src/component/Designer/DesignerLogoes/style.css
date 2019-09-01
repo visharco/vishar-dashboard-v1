@@ -1,0 +1,102 @@
+
+.DesignerLogoes{ 
+
+}
+
+.DL-title {
+    text-align: right;
+    margin: auto;
+    padding: 50px;
+    background-color: #F1F1F1;
+
+}
+
+
+.DL-logos {
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px solid #e7e7e7;
+    background-color: #fff;
+
+}
+
+
+.DL-logos img{
+    width: 60%;
+    margin-bottom: 40px
+}
+.DL-comment-box {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.DL-up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.DL-down{
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 1200px){
+.DL-up{
+    flex-direction: column;
+}
+
+}
+
+@media screen and (max-width: 700px){
+
+    .DL-title {
+        padding: 50px;
+    }
+    .DL-logos  img {
+        width: 100%;
+    }
+}
+    
+
+@media screen and (max-width: 600px){
+
+.DLT-right{
+    margin-bottom: 30px;
+}
+.DL-up{
+    flex-direction: column;
+}
+}
+
+@media screen and (max-width: 500px){
+    .DLT-right-title h2 {
+        font-size: 12px;
+    }
+    .DLT-right-title h1 {
+        font-size: 16px;
+    }
+    .DLT-left{
+        width: 100%;
+    }
+    .DLT-left .button-box{
+        width: 100%;
+    }
+    .DLT-left .button-style{
+        width: 100%;
+    }
+    .DLT-icon-box {
+        margin-top: 20px;
+    }
+    .DL-comment-box{
+        padding: 20px;
+    }
+    .DL-logos{
+        padding: 20px;
+    }
+
+
+}

@@ -1,0 +1,167 @@
+.footer{  
+    padding: 1rem;
+    background-color: #333;
+    bottom: 0;
+}
+
+.footer .container{
+    display: flex;
+    padding: 50px;
+}
+
+.footer-split {
+    width: 50%; 
+    margin: 0 5px;
+    text-align: center;
+}
+
+.footer-split h1 {
+    color: #7F7F7F;
+    padding: 30px;
+}
+
+.footer-menu{
+    display: flex;
+    color: #fff;
+    width: 300px;
+    margin: auto;   
+    justify-content: center;
+
+}
+.footer-menu ul{
+    text-align: center;
+    margin: 0px 40px;
+}
+ 
+.footer-split ul li {
+    list-style-type: none;
+    text-align: right;
+    padding: 0.5rem 0px;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.footer-split ul li:hover{
+    opacity: 0.8;
+}
+
+.footer-newslater{
+    margin: auto;
+
+}
+
+.newslater-container{
+     
+    height: 55px; 
+    justify-content: center;
+    text-align: center;
+    display: flex;
+
+
+
+}
+
+.footer-social-network{
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    padding: 30px 0;
+
+}
+
+.footer-social-network > div{
+    border: 3px solid #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+    transition: all .2s linear;
+}
+.footer-social-network > div:hover{
+    opacity: .8;
+    transition: all .2s linear;
+}
+.footer-social{
+    width: 35px;
+    height: 36px;
+    margin: 0 5px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+
+.footer-newslater-input-container{
+    width: 300px;
+    height: 50px;
+    background-color: #333;
+    border-radius: 50px 0 0 50px;
+    border: 1px solid #5F5F5F;
+    padding-left: 20px;
+    color: #fff;
+}
+
+
+.footer-newslater-button-container{
+    background-color: #0090CF;
+    width: 100px;
+    height: 50px;
+    border-radius: 0 50px 50px 0;
+    border: 1px solid #0090CF;
+    transition: ease 500ms;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.footer-newslater-button-container p {
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-newslater-button-container:hover {
+    opacity: 0.8;
+}
+
+.F-SN{
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 800px){
+    
+    .footer .container{
+        flex-direction: column-reverse;
+    }
+    .footer-split {
+        width: 100%;
+    }
+    .footer-menu{
+        width: 100%;
+    }
+    .footer-menu ul{
+        margin: 10px;
+        width: 100%;    
+    }
+    .footer-split ul li{
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width: 400px){
+    .footer-newslater-button-container p{
+font-size: 12px;
+    }
+    .footer .container{
+        padding: 10px;
+    }
+    
+}

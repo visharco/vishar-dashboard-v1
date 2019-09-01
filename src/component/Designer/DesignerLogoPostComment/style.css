@@ -1,0 +1,40 @@
+.DesignerLogoPostComment{
+    width: calc(100% - 440px);
+    background-color: #F9F9F9;
+    height: 300px;
+    border: 2px solid #ededed;
+    padding: 40px;
+}
+
+.DesignerLogoPostComment .input-label textarea{
+min-height: 150px;
+}
+
+.DesignerLogoPostComment .Inputbox{
+margin: 0;
+}
+
+.DesignerLogoPostComment .button-style{
+    margin-top: 20px;
+border: 2px solid #efefef;
+}
+
+
+@media screen and (max-width: 1200px){
+
+.DesignerLogoPostComment{
+    width: 100%;
+}
+
+}
+
+@media screen and (max-width: 900px){
+
+}
+
+@media screen and (max-width: 700px){
+    .DesignerLogoPostComment{
+        padding: 20px;
+    }
+
+}

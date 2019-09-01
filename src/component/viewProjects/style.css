@@ -1,0 +1,300 @@
+
+.ViewProjects{
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    padding: 0px;
+    position: absolute;
+    z-index: 3;
+    background-color: white;
+    right: 0;
+    top: 0;
+    left: 0;
+}
+
+.VP-title{
+    font-size: 25px;
+    font-weight: 900;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    direction: rtl;
+    color: #bababa;
+}
+
+.VP-body{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding:  0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    overflow: scroll;
+}
+
+.VP-left{
+    width: 400px;
+    background-color: #f8f8f8;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.VPL-title{
+    display: flex;
+    border-bottom: 1px solid #efefef;
+    padding: 20px 0px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.VPLT-up{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+.VPLT-desc{
+
+}
+
+
+.VPL-close{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 20px;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+.VPL-close:hover{
+    opacity: .7; 
+
+}
+
+.VPLT-up img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.VPLT-desc{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-desgin-selected {
+    background-color: #2196F3;
+    width: 100%;
+    margin: auto;
+    height: 40px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    /* cursor: pointer; */
+    transition: all .2s linear;
+}
+
+.btn-desgin-selected  img {
+    padding: 0 5px;
+
+}
+
+.VPLT-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.VPLT-text p{
+    color: #707070;
+}
+
+.VPLT-text h2{
+    font-size: 14px;
+    margin-right: 10px;
+
+}
+.VPLT-text span {
+    color: #999;
+    font-size: 12px;
+}
+
+.VLP-message{
+    border: 1px solid #EAEAEA;
+    width: 100%;
+    color: #a3a3a3;
+    margin: auto;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all .2s linear;
+    margin-top: 20px;
+}
+.VLP-message:hover{
+    background-color: #EAEAEA;
+}
+
+.VPL-desc{
+    padding: 60px 0px;
+    border-bottom: 1px solid #efefef;
+}
+
+
+.VPL-desc h1{
+    color: #444;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.VPL-desc p{
+    color: #666;
+}
+
+.VPL-rating{
+    padding: 20px 0px;
+    border-bottom: 1px solid #efefef;
+    direction: ltr;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.VPL-action{
+    padding: 20px 0px;
+    border-bottom: 1px solid #efefef;
+}
+
+.VPL-action h1{
+    color: #444;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.VPL-action p{
+    color: #666;
+    padding: 20px 0px;
+    color: #F57777;
+}
+
+.VPL-button {
+    background-color: #6FCF97;
+    width: 100%;
+    margin: auto;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+.VPL-button:hover {
+    opacity: .6; 
+}
+
+.VPL-button img{
+    width: 20px;
+    margin-left: 10px;
+}
+
+.VP-report{
+    bottom: 20px;
+    left: 20px;
+    position: absolute;
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    border: 2px dashed #cdcdcd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    cursor: pointer;
+    transition: all .2s linear;
+
+}
+.VP-report:hover{
+    transition: all .2s linear;
+    background-color: #fff;
+}
+.VP-report img{
+    width: 15px;
+    margin-left: 5px;
+}
+
+/* stars  */
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 3em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "★";
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+ cursor: pointer;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+/* STARS  */
+
+
+.VP-sliders {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 400px)
+}
+
+.VP-sliders img{
+    width: 80%;
+    margin-bottom: 20px;
+
+}
+
+
+
+@media screen and (max-width: 700px){
+    .VP-body{
+        flex-direction: column-reverse;
+    }
+    .VP-sliders , .VP-left{
+        width: 100%;
+        padding: 100px 20px;
+    }
+}

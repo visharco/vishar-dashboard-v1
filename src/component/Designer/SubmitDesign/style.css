@@ -1,0 +1,285 @@
+
+.SubmitDesign{
+display: flex;
+flex-direction: column;
+direction: rtl;
+padding: 30px;
+position: relative;
+}
+.SD-title{
+    font-size: 25px;
+    font-weight: 900;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    direction: rtl;
+    color: #bababa;
+}
+.SD-body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+
+
+.SD-cover-image{
+    margin: 30px 0px;
+
+}
+
+
+
+.SDC-title{
+
+}
+
+.SDC-title h1 , .SDUF-left h1 , .SDUF-upload h1 ,.SD-desc h1{
+    color: #666;
+    font-size: 18px;
+}
+
+.SDC-title p , .SDUF-left p ,  .SD-desc p{
+    font-size: 16px;
+    color: #555;
+}
+
+.SDC-upload{
+    position: relative;
+    width: 100%;
+    background-color: #f9f9f9;
+    border-radius: 30px;
+    border: 2px dashed #cbcbcb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: all .2s linear;
+    margin: 10px 0px;
+    padding: 20px 0px;
+}
+.SDC-upload:hover{
+    opacity: .7;
+    transition: all .2s linear;
+}
+.SDC-upload h1{
+    color: #686868;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.SDC-upload p , .SDUF-upload p{
+color: #cdcdcd;
+font-size: 15px;
+text-align: center;
+padding: 0px 10px;
+}
+
+
+.SDC-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px dashed #cacaca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px ;
+}
+.SDC-img img{
+    width: 100%;
+    border-radius: 500px;
+    
+}
+
+.SDUF-down{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.SDUF-up{
+    display: flex;
+    margin: 20px 0px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eed27a;
+    padding: 10px;
+    border-radius: 5px;
+
+
+}
+.SD-upload-files{
+    margin: 30px 0px;
+
+}
+.SDUF-left{
+
+}
+
+.SDUF-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #d2d2d2!important;
+    border-radius: 10px;
+    padding: 5px 30px!important;
+    font-size: 14px!important;
+    cursor: pointer;
+    color: #999999;
+    transition: all .2s linear;
+
+}
+
+.SDUF-link {
+    padding: 5px;
+    color: #2196F3;
+    transition: all .2s linear;
+    cursor: pointer;
+
+}
+
+.SDUF-link:hover {
+    color: #555555;
+}
+
+.SDUF-button:hover{
+    background-color: #eee;
+    transition: all .2s linear;
+
+}
+.SDUF-upload{
+    width: calc(50% - 20px);
+    background-color: #f9f9f9;
+    border-radius: 30px;
+    border: 2px dashed #cbcbcb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: all .2s linear;
+    margin-top: 10px;
+}
+.SD-desc{
+    margin: 30px 0px;
+
+}
+.SDC-text{
+    padding: 0px 10px;
+    text-align: center;
+}
+
+.SDUF-upload{
+    padding: 20px 0px;
+    
+
+}
+.SDUF-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px dashed #cacaca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px ;
+    transition: all .2s linear;
+
+}
+.SDUF-img:hover{
+    opacity: .7;
+    transition: all .2s linear;
+}
+.SDUF-img img{
+    width: 50%;
+}
+
+.SDUF-text{
+
+}
+.SD-action{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+}
+.SD-action .button-style{
+    font-weight: 900
+}
+
+
+.SD-success-page{
+    padding: 50px;
+    background-color: #6FCF97;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+
+.SDS-right{
+    display: flex;
+    flex-direction: row;
+    font-weight: 500;
+    align-items: center;
+}
+
+.SDS-right img{
+    width: 100px;
+    margin-left: 20px;
+}
+
+.SDS-right-text h1{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.SDS-right-text p{
+    font-size: 15px;
+    color: #fff;
+}
+
+.SD-success-page .button-box {
+    font-weight: 900;
+    margin-top: 40px;
+}
+.SD-success-page .button-style {
+    font-weight: 900;
+    margin-top: 20px;
+    font-size: 18px;
+    width: 200px;
+}
+
+@media screen and (max-width: 500px){
+.SDUF-upload{
+    width: 100%;
+}
+.SDUF-down , .SDUF-up{
+    flex-direction: column;
+}
+.SDUF-button{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 10px;
+}
+
+}
+@media screen and (max-width: 400px){
+
+.SubmitDesign{
+    padding: 15px;
+}
+.SD-action .button-style , .SD-action .button-box{
+    width: 100%;
+}
+
+}
+

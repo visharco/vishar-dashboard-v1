@@ -1,0 +1,187 @@
+
+input[type=file] {
+
+    /* width: 1px;
+	height: 1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+    z-index: -1; */
+    opacity: 0;
+ 
+    background-color: red;
+    width: 100%;
+    /* height: 100%; */
+    /* position: absolute; */
+    cursor: pointer;
+
+  }
+
+.Profile{
+display: flex;
+flex-direction: column;
+direction: rtl;
+padding: 30px;
+}
+.PE-title{
+    font-size: 25px;
+    font-weight: 900;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    direction: rtl;
+    color: #bababa;
+}
+.PE-body{
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding: 50px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    border-radius: 12px;
+    background-color: #f5f5f5;
+
+}
+
+
+.PE-inputs{
+width: calc(50% - 40px);
+direction: rtl; 
+
+}
+
+.PE-upload{
+    width: calc(50% - 40px);
+    background-color: #f9f9f9;
+    border-radius: 30px;
+    border: 2px dashed #cbcbcb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: all .2s linear;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+.PE-upload:hover{
+    opacity: .7;
+    transition: all .2s linear;
+}
+.PE-upload h1{
+color: #686868;
+font-size: 28px;
+font-weight: 400;
+}
+
+.PE-upload p{
+color: #cdcdcd;
+font-size: 15px;
+}
+
+.PE-btns{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.PE-cancel{
+    padding: 0px 50px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #cacaca;
+    cursor: pointer;
+    transition: all .2s linear;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+.PE-cancel:hover{
+    color: #aaa;
+    transition: all .2s linear;
+    border: 2px solid #aaa;
+}
+
+.PE-btns .button-box{
+    margin-bottom: 20px;    
+}
+.PE-btns .button-style{
+    width: 200px;
+}
+
+
+.PU-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px dashed #cacaca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.PU-img img{
+width: 50%;
+}
+.showImageForUpload{
+    width: 100%!important;
+    height: 100%;
+}
+.PE-input{
+    color: transparent;
+    font-size: 0;
+    width: 100%;
+    position: absolute;
+    top: -6px;
+    left: 0;
+    cursor: pointer;
+    height: 500px;
+    z-index: 2;
+}
+
+.PU-text{
+    padding: 0px 10px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 800px){
+.PE-body{
+    flex-direction: column-reverse;
+    
+}
+.PE-inputs , .PE-upload{
+    width: 100%;
+    padding: 20px 0px;
+
+}  
+.PE-upload{
+    
+ } 
+ .PU-img{
+     margin: 20px 0px;
+ }
+}
+
+@media screen and (max-width: 400px){
+.PE-btns{
+    flex-direction: column-reverse;
+}
+.PE-btns .button-box , .PE-cancel , .PE-btns .button-style{
+    width: 100%;
+    text-align: center;
+}
+.Profile{
+    padding: 15px;
+}
+
+}
+

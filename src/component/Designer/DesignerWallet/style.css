@@ -1,0 +1,104 @@
+
+.DesignerWallet{
+display: flex;
+flex-direction: column;
+direction: rtl;
+padding: 30px;
+}
+
+.DW-title{
+    font-size: 25px;
+    font-weight: 900;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    direction: rtl;
+    color: #bababa;
+}
+
+.success {
+    color: #6FCF97!important;
+}
+
+.DW-table-title , .DW-table-body , .DW-request-box {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: -1px 4px 11px 0px #ececec;
+    align-items: center;
+
+}
+
+.DWB-child , .DWB-child1 ,.DWB-child{
+    color: #666;
+}
+
+
+.DWT-child , .DWB-child{
+    width: calc((100% - 40px)/3);
+    min-width: 200px;
+}
+
+.DWT-child1 , .DWB-child1{
+    min-width: 40px;
+}
+
+
+.DesignerWallet table {
+    width: 100%;
+    direction: rtl;
+    text-align: right;
+}
+  
+.DesignerWallet th, .DesignerWallet td {
+    text-align: center;
+}
+  
+.DW-table{
+   overflow-x:auto;
+   padding-top: 20px;
+} 
+
+.DW-request-box{
+    margin-top: 20px;
+}
+
+
+.DW-money{
+    font-weight: 900;
+    font-size: 15px;
+}
+.DW-money span{
+    margin-left: 10px;
+}
+
+.DW-request-box .button-style{
+    width: 220px;
+    font-weight: 900;
+
+}
+
+
+@media screen and (max-width: 700px){
+
+}
+
+@media screen and (max-width: 500px){
+
+.DW-request-box{
+    display: flex;
+    width: 100%;  
+    flex-direction: column;  
+}
+.DW-money{
+    margin-bottom: 20px;
+}
+.DW-request-box .button-style ,.DW-request-box .button-box{
+    width: 100%;
+}
+}
+

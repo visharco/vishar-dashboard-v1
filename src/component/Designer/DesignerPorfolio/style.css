@@ -1,0 +1,161 @@
+
+.DesignerPorfolio{
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    padding: 40px 30px;
+}
+.DPO-title{
+    font-size: 25px;
+    font-weight: 900;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    direction: rtl;
+    color: #bababa;
+}
+.DPO-body{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    flex-direction: column;
+}
+.DPO-up{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.DPO-create-project-btn{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #6FCF97;
+    width: 220px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s linear;     
+
+}
+.DPO-create-project-btn:hover{
+    background-color: rgb(145, 211, 172);
+    transition: all .2s linear;     
+    
+}
+.DPO-create-project-btn p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+}
+.DPO-search-box{
+    display: flex;
+    width: 100%;
+    margin: 20px 0px ;
+    position: relative;
+}
+
+.DPO-search-box input{
+    border: 1px solid rgba(233, 233, 233, 0.8);
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    margin: auto;
+    padding: 0px 30px;
+    direction: rtl;
+    transition: all .2s linear;     
+}
+.DPO-search-box input:focus{
+    box-shadow: 0px 6px 15px -6px #80808094;
+    transition: all .2s linear;     
+}
+
+.DPO-search-box img{
+    position: absolute;
+    background-color: #0090CF;
+    width: 40px;
+    padding: 12px;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.DPO-search-box img:hover{
+    opacity: .8;
+    transition: all .2s linear;
+}
+
+.DPO-down{
+
+}
+
+.DPO-select-logo{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+
+.pagination{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.pagination-number{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all .2s linear;
+}
+
+
+.pagination-number-selected{
+    background-color: #d4d4d4;
+}
+
+
+@media screen and (max-width: 700px){
+
+    .DPO-up{
+        flex-direction: column-reverse;
+
+    }
+    .DPO-search-box , .DPO-create-project-btn{
+        width: 100%;
+    }
+    .DPO-create-project-btn{
+        padding: 0px 20px;
+        justify-content: space-between;
+    }
+    .DesignerSingleProject{
+        padding: 15px;
+    }
+    .DPO-body{
+        padding: 0px;
+    }
+
+    .pagination-number {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+        margin: 0px 5px;
+
+    }
+    .pagination{
+        padding: 20px 0px;
+    }
+
+}
