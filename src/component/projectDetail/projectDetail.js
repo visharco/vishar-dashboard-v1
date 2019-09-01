@@ -66,6 +66,8 @@ class ProjectDetail extends Component {
     design = React.createRef();
 
 
+    
+
     descriptionHandler = (e) => {
 
         if (e.target.id === 'brief') {
