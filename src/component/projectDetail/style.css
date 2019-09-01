@@ -30,6 +30,14 @@ padding:40px 30px;
     justify-content: center;
 }
 
+.payment-again {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #bebebe;
+
+}
+
 
 .PD-desc-up {
     width: 100%;

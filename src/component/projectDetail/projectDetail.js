@@ -172,22 +172,30 @@ class ProjectDetail extends Component {
                 </div>
 
                 <div className="PD-desc-up" >
-                    <div className="PD-desc-box">
-                        {/* <div className="PD-desc-title" onClick={this.descriptionHandler} id="messages" ref={this.messages}>پیامها
-                            <span className="PD-desc-number" >4</span>
-                        </div> */}
-                        <div className="PD-desc-title" onClick={this.descriptionHandler} id="design" ref={this.design}>طرح های دریافتی
-                            {/* <span className="PD-desc-number" >10</span> */}
+                    <div className=" payment-again">
+                        <div>
+                            {this.state.myProject.status === 'pending' ?
+                                <div className="DPD-submit-design" onClick={this.goToSubmitInvoice} >
+                            پرداخت مجدد
+                                </div>
+                                : '' 
+                            }
                         </div>
-                        <div className="PD-desc-title" onClick={this.descriptionHandler} id="brief" ref={this.brief}>توضیحات
+
+                        <div className="PD-desc-box">
+                            {/* <div className="PD-desc-title" onClick={this.descriptionHandler} id="messages" ref={this.messages}>پیامها
+                                <span className="PD-desc-number" >4</span>
+                            </div> */}
+                            <div className="PD-desc-title" onClick={this.descriptionHandler} id="design" ref={this.design}>طرح های دریافتی
+                                {/* <span className="PD-desc-number" >10</span> */}
+                            </div>
+                            <div className="PD-desc-title" onClick={this.descriptionHandler} id="brief" ref={this.brief}>توضیحات
+                            </div>
                         </div>
+
+ 
                     </div>
-                    {this.state.myProject.status === 'pending' ?
-                        <div className="DPD-submit-design" onClick={this.goToSubmitInvoice} >
-                        ثبت طرح 
-                        </div>
-                        : '' 
-                    }
+                 
 
                 </div>
                 <div className="PD-desc-down">
