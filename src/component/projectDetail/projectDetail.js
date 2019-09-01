@@ -50,7 +50,7 @@ class ProjectDetail extends Component {
         // // console.log(res.status);   // 200 means success
         // // console.log(res.error);    // show the error from server
         // // console.log(res.data);     // show the data from server
-        console.log(res.data)
+        // console.log(res.data)
 
         await this.setState({
             myProject:res.data,
