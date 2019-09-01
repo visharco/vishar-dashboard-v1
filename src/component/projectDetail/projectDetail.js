@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 //
 import MessageBox from '../MessageBox/MessageBox'
 import GetApi from '../../controler/getToApi';
-
+import PostToApii from '../../controler/postToApi';
 
 
 import color1 from '../../assets/images/color1.png'
@@ -50,10 +50,11 @@ class ProjectDetail extends Component {
         // // console.log(res.status);   // 200 means success
         // // console.log(res.error);    // show the error from server
         // // console.log(res.data);     // show the data from server
-        // console.log(res.data)
+        console.log(res.data)
 
         await this.setState({
-            myProject:res.data
+            myProject:res.data,
+            idInvoiceProject:res.data.invoice.id
         })
     }
 
@@ -114,7 +115,20 @@ class ProjectDetail extends Component {
         this.setState({ viewProject: false })
     }
 
+    goToSubmitInvoice = async () =>{
 
+        const data = new FormData();
+        data.append('projectInvoiceId', this.state.idInvoiceProject);
+      
+
+        const res = await PostToApii(data, 'projects/invoice');
+
+        window.location = res.data.url;
+
+        this.setState({
+            isLoadingGetData: false
+        })
+    }
 
 
 
@@ -168,6 +182,13 @@ class ProjectDetail extends Component {
                         <div className="PD-desc-title" onClick={this.descriptionHandler} id="brief" ref={this.brief}>توضیحات
                         </div>
                     </div>
+                    {this.state.myProject.status === 'pending' ?
+                        <div className="DPD-submit-design" onClick={this.goToSubmitInvoice} >
+                        ثبت طرح 
+                        </div>
+                        : '' 
+                    }
+
                 </div>
                 <div className="PD-desc-down">
                     <div className="PD-desc-box2">
