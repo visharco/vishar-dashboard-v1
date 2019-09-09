@@ -130,6 +130,10 @@ class ProjectDetail extends Component {
         })
     }
 
+    goToEdit = () => {
+        
+    }
+
 
 
     render() {
@@ -173,11 +177,19 @@ class ProjectDetail extends Component {
 
                 <div className="PD-desc-up" >
                     <div className=" payment-again">
-                        <div>
+                        <div className="edit-project-buttos">
                             {this.state.myProject.status === 'pending' ?
                                 <div className="DPD-submit-design" onClick={this.goToSubmitInvoice} >
                             پرداخت مجدد
                                 </div>
+                                
+                                : '' 
+                            }
+                            {this.state.myProject.status === 'pending' ?
+                                <div className="  edit-button" onClick={this.goToEdit} >
+                            ویرایش
+                                </div>
+                                
                                 : '' 
                             }
                         </div>
