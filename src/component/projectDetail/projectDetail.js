@@ -46,18 +46,9 @@ class ProjectDetail extends Component {
 
     componentWillMount = async() => {
         let id = window.location.pathname.split('/')[2]
-        const res = await GetApi('projects/'+ id);
-        this.setState({
-            projectId: id
-        })
-
-        // // console.log(res);          // data, error,status
-        // // console.log(res.status);   // 200 means success
-        // // console.log(res.error);    // show the error from server
-        // // console.log(res.data);     // show the data from server
-        // console.log(res.data)
-
+        const res = await GetApi('projects/'+ id);  
         await this.setState({
+            projectId: id ,
             myProject:res.data,
             idInvoiceProject:res.data.invoice.id
         })

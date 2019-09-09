@@ -81,7 +81,7 @@ class RouterComponent extends Component {
                                 <Route path="collaborateProject" component={CollaborateProjectScreen} />
                                 <Route path="projectDetail/:id" component={ProjectDetailScreen} />
                                 <Route path="createNewProject" component={CreateNewProjectScreen} />
-                                <Route path="edit" component={EditProjectScreen} />
+                                <Route path="edit/:id" component={EditProjectScreen} />
                                 <Route path="notification" component={NotificationScreen} />
                                 <Route path="message" component={MessageScreen} />
                                 <Route path="chatBox" component={ChatBoxScreen} />

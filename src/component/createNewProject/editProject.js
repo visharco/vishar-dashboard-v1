@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import SweetAlert from 'sweetalert-react';
 import Input from './../common/input/Input'
 import Button from '../../component/common/Button/Button';
-import TextArea from '../common/textarea/textarea'
-import GetToApi from '../../controler/getToApi';
+import TextArea from '../common/textarea/textarea' 
 import PostToApii from '../../controler/postToApi';
 import LoadingComponent from '../loading/loadingComponent';
+import GetToApi from '../../controler/getToApi';
 
 
 import './style.css';
@@ -15,6 +15,18 @@ class EditPRojectComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {  }
+    }
+    componentWillMount = async() => {
+        let id = window.location.pathname.split('/')[2]
+        const res = await GetToApi('projects/'+ id);  
+        await this.setState({
+            projectId: id ,
+            data:res.data ,
+            title:res.data.title ,
+            description:res.data.desc ,
+            otherDescription:res.data.desc_more ,
+
+        }) 
     }
     //
     // get data from input by event target -------------------------------------------------------------->
@@ -26,13 +38,37 @@ class EditPRojectComponent extends Component {
     }
     //
     // Save action -------------------------------------------------------------------------------
-    _CallSave = () => {
-        alert("ssss")
+    _CallSave = async() => {
+        const data = new FormData();
+        data.append('title',this.state.title);
+        data.append('desc',this.state.description);
+        data.append('desc_more',this.state.otherDescription);
+        
+        const res = await PostToApii(data, 'projects/update/' + this.state.projectId);
+        if(res.status === 200 ){
+            this.setState({
+                show: true,
+                errorMessage:'تغیرات با موفقیت ذخیره شد'
+            });
+            browserHistory.push('/projectDetail/' + this.state.projectId)
+        } else{
+            this.setState({
+                show: true,
+                errorMessage:res.error
+            })
+        }
     }
     render() { 
         return ( 
             <div className="CreateNewProject">
                
+               <SweetAlert
+                    show={this.state.show}
+                    title=""
+                    text={this.state.errorMessage}
+                    onConfirm={() => this.setState({show: false})}
+                />
+
                 {this.state.isLoadingGetData ? <LoadingComponent/> : ''}
                 <div className="PE-title" >
                     ویرایش پروژه
