@@ -6,7 +6,7 @@ import TextArea from '../common/textarea/textarea'
 import PostToApii from '../../controler/postToApi';
 import LoadingComponent from '../loading/loadingComponent';
 import GetToApi from '../../controler/getToApi';
-
+import { browserHistory } from 'react-router';
 
 import './style.css';
 
@@ -46,10 +46,10 @@ class EditPRojectComponent extends Component {
         
         const res = await PostToApii(data, 'projects/update/' + this.state.projectId);
         if(res.status === 200 ){
-            this.setState({
-                show: true,
-                errorMessage:'تغیرات با موفقیت ذخیره شد'
-            });
+            // this.setState({
+            //     show: true,
+            //     errorMessage:'تغیرات با موفقیت ذخیره شد'
+            // });
             browserHistory.push('/projectDetail/' + this.state.projectId)
         } else{
             this.setState({
