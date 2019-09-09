@@ -222,7 +222,7 @@ class Profile extends Component {
                         <div className="PE-btns" >
                             <div className="PE-cancel" >
                                 انصراف
-                        </div>
+                            </div>
                             <Button
                                 isLoading={this.state.isLoading}
                                 title={'ذخیره'}

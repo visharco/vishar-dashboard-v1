@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SweetAlert from 'sweetalert-react';
 import Input from './../common/input/Input'
+import Button from '../../component/common/Button/Button';
 import TextArea from '../common/textarea/textarea'
 import GetToApi from '../../controler/getToApi';
 import PostToApii from '../../controler/postToApi';
@@ -59,6 +60,23 @@ class EditPRojectComponent extends Component {
                             val={this.state.otherDescription}
                         />
                     </div> 
+
+                    <div className="PE-btns" >
+                            <div className="PE-cancel" >
+                                انصراف
+                            </div>
+                            <Button
+                                isLoading={this.state.isLoading}
+                                title={'ذخیره'}
+                                bgcolor={'#0080FF'}
+                                hoverbgcolor={'#rgb(160, 160, 160)'}
+                                click={this._CallSave}
+                                borderRadius="30px"
+                                color="#fff"
+                            />
+                        </div>
+
+
                 </div>
             </div>
          );
