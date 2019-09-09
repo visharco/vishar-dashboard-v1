@@ -179,27 +179,27 @@ class DesignerDashboardMenu extends Component {
                         <div className="DDM-body" >
                             <div className="DDM-body-child" onClick={this.goTpDashboard} >
                                 <p>داشبورد</p>
-                                <i class="fas fa-tachometer-alt"></i>
+                                <i className="fas fa-tachometer-alt"></i>
                             </div>                            
                             <div className="DDM-body-child" onClick={this.goToDesignerProfile} >
                                 <p>پروفایل</p>
                                 {/* <img src={userblack} alt="کاربر" /> */}
-                                <i class="fas fa-user"></i>
+                                <i className="fas fa-user"></i>
                             </div>
                             <div className="DDM-body-child" onClick={this.goToDesignerWallet} >
                                 <p>کیف پول </p>
                                 {/* <img src={wallet} alt="فردی" /> */}
-                                <i class="fas fa-wallet"></i>
+                                <i className="fas fa-wallet"></i>
                             </div>
                             <div className="DDM-body-child" onClick={this.goToProjects} >
                                 <p>پروژه ها </p>
                                 {/* <img src={employee} alt="فردی" /> */}
-                                <i class="fas fa-project-diagram"></i>
+                                <i className="fas fa-project-diagram"></i>
                             </div>
                             <div className="DDM-body-child" onClick={this.goToDesignerSingleProject} >
                                 <p>پروژه های من</p>
                                 {/* <img src={employee} alt="فردی" /> */}
-                                <i class="fas fa-layer-group"></i>
+                                <i className="fas fa-layer-group"></i>
                             </div>
                             {/* <div className="DDM-body-child" onClick={this.goToDesignerCollaborateProject} >
                                 <p>پروژه های همکاری</p>
@@ -212,12 +212,12 @@ class DesignerDashboardMenu extends Component {
                             <div className="DDM-body-child" onClick={this.goToDesignerPayments} >
                                 <p>تراکنشها</p>
                                 {/* <img src={payment} alt="تراکنش" /> */}
-                                <i class="fas fa-file-invoice-dollar"></i>
+                                <i className="fas fa-file-invoice-dollar"></i>
                             </div>
                             <div className="DDM-body-child" onClick={this.goToDesignerPorfolio} >
                                 <p>نمونه کارهای من</p>
                                 {/* <img src={portfoilo} alt="تراکنش" /> */}
-                                <i class="fas fa-briefcase"></i>
+                                <i className="fas fa-briefcase"></i>
                             </div>
 
                         </div>

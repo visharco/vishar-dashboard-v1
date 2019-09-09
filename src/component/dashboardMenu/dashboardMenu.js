@@ -57,8 +57,7 @@ class DashboardMenu extends Component {
 
     componentDidMount = async () => {
         window.addEventListener('scroll', this.handleScroll);
-        const  res = await GetApi('profile/init');
-        console.log(res.data)
+        const  res = await GetApi('profile/init'); 
         if(res.status === 200){
             await this.setState({
                 nameFamily:res.data.name,
@@ -68,8 +67,7 @@ class DashboardMenu extends Component {
             })
         } else if(res.status === 401) {
 
-            localStorage.removeItem('@authorization_vishar');   // remove local storage.
-            //  browserHistory.push('/login');      
+            localStorage.removeItem('@authorization_vishar');   // remove local storage.     
             window.location.reload();
 
         }
@@ -194,22 +192,22 @@ class DashboardMenu extends Component {
                         <div className="DM-body" >
                             <div className="DM-body-child" onClick={this.goTpDashboard} >
                                 <p>داشبورد</p>
-                                <i class="fas fa-tachometer-alt"></i>
+                                <i className="fas fa-tachometer-alt"></i>
                             </div>  
                             <div className="DM-body-child" onClick={this.goToProfile} >
                                 <p>پروفایل</p>
                                 {/* <img src={userblack} alt="کاربر" /> */}
-                                <i class="fas fa-user"></i>
+                                <i className="fas fa-user"></i>
                             </div>
                             <div className="DM-body-child" onClick={this.gotoCreateProject} >
                                 <p>معرفی پروژه جدید</p>
                                 {/* <img src={employee} alt="فردی" /> */}
-                                <i class="fas fa-project-diagram"></i>
+                                <i className="fas fa-project-diagram"></i>
                             </div>
                             <div className="DM-body-child" onClick={this.goToSingleProject} >
                                 <p>پروژه های من</p>
                                 {/* <img src={employee} alt="فردی" /> */}
-                                <i class="fas fa-layer-group"></i>
+                                <i className="fas fa-layer-group"></i>
                             </div>
                             {/* <div className="DM-body-child" onClick={this.goToCollaborateProject} >
                                 <p>پروژه های همکاری</p>
@@ -222,7 +220,7 @@ class DashboardMenu extends Component {
                             <div className="DM-body-child" onClick={this.goToPayments} >
                                 <p>تراکنشها</p>
                                 {/* <img src={payment} alt="تراکنش" /> */}
-                                <i class="fas fa-file-invoice-dollar"></i>
+                                <i className="fas fa-file-invoice-dollar"></i>
 
                             </div>
 

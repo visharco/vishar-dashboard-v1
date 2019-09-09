@@ -36,8 +36,7 @@ class DesignerSingleProject extends Component {
         const res = await GetToAPI('projects/designer');
         await this.setState({
             data:res.data
-        })
-        // console.log(res.data)
+        }) 
 
     }
 

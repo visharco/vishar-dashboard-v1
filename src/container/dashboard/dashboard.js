@@ -21,19 +21,16 @@ class DashboardComponent extends Component {
      
     }
 
-    getInfo = async (type) => {
-        console.log(type)
+    getInfo = async (type) => { 
         if(type === 'customer'){
-            const  res = await GetApi('projects/count/all/customer');
-            // console.log(res)
+            const  res = await GetApi('projects/count/all/customer'); 
             if(res.status === 200){
                 await this.setState({
                     getall:res.data,  
                 })
             } else if(res.status === 401) {
     
-                localStorage.removeItem('@authorization_vishar');   // remove local storage.
-                //  browserHistory.push('/login');      
+                localStorage.removeItem('@authorization_vishar');   // remove local storage. 
                 window.location.reload();
     
             }
@@ -114,7 +111,7 @@ class DashboardComponent extends Component {
                 <div className="row">
                     <div className="d-cards">
                         <div className="d-icon-container d-green">
-                            <i class="fas fa-project-diagram"></i>
+                            <i className="fas fa-project-diagram"></i>
                         </div>
                         <h3>پروژه های ثبت شده</h3>
                         <h1>{this.state.getall.projects}</h1>
@@ -122,7 +119,7 @@ class DashboardComponent extends Component {
                     </div>
                     <div className="d-cards">
                         <div className="d-icon-container d-blue">
-                            <i class="fas fa-layer-group"></i>
+                            <i className="fas fa-layer-group"></i>
                         </div>
                         <h3>طرح های دریافتی</h3>
                         <h1>{this.state.getall.projects_design}</h1>
@@ -130,7 +127,7 @@ class DashboardComponent extends Component {
                     </div>
                     <div className="d-cards">
                         <div className="d-icon-container d-orange">
-                            <i class="fas fa-gavel"></i>
+                            <i className="fas fa-gavel"></i>
                         </div>
                         <h3>طرح های نهایی شده</h3>
                         <h1>{this.state.getall.projects_final}</h1>
@@ -138,7 +135,7 @@ class DashboardComponent extends Component {
                     </div>
                     <div className="d-cards">
                         <div className="d-icon-container d-purple">
-                            <i class="fas fa-envelope"></i>
+                            <i className="fas fa-envelope"></i>
                         </div>
                         <h3>پیام های دریافتی</h3>
                         <h1>0</h1>
@@ -195,7 +192,7 @@ class DashboardComponent extends Component {
                   <div className="row">
                     <div className="d-cards">
                         <div className="d-icon-container d-green">
-                            <i class="fas fa-project-diagram"></i>
+                            <i className="fas fa-project-diagram"></i>
                         </div>
                         <h3>پروژه های انجام داده</h3>
                         <h1>{this.state.getall.projects}</h1>
@@ -203,7 +200,7 @@ class DashboardComponent extends Component {
                     </div>
                     <div className="d-cards">
                         <div className="d-icon-container d-blue">
-                            <i class="fas fa-layer-group"></i>
+                            <i className="fas fa-layer-group"></i>
                         </div>
                         <h3>اتد های ارسالی</h3>
                         <h1>{this.state.getall.projects_design}</h1>
@@ -211,7 +208,7 @@ class DashboardComponent extends Component {
                     </div>
                     <div className="d-cards">
                         <div className="d-icon-container d-orange">
-                            <i class="fas fa-gavel"></i>
+                            <i className="fas fa-gavel"></i>
                         </div>
                         <h3>طرح های نهایی شده</h3>
                         <h1>{this.state.getall.project_final}</h1>
@@ -219,7 +216,7 @@ class DashboardComponent extends Component {
                     </div>
                     <div className="d-cards">
                         <div className="d-icon-container d-purple">
-                            <i class="fas fa-envelope"></i>
+                            <i className="fas fa-envelope"></i>
                         </div>
                         <h3>پیام های دریافتی</h3>
                         <h1>0</h1>

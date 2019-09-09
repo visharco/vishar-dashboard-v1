@@ -25,10 +25,7 @@ class Payments extends Component {
     }
 
     componentWillMount = async() => {
-        const res = await GetApi('invoice');
-
-        console.log(res.data)
-
+        const res = await GetApi('invoice');  
         await this.setState({
             invoice: res.data
         })
