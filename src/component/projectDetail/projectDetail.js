@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { browserHistory } from 'react-router';
 
 //
 //
@@ -37,7 +38,8 @@ class ProjectDetail extends Component {
             designerLikes: 10,
             viewProject: false,
             myProject: [],
-            desginId:0
+            desginId:0,
+            projectId:0
 
         }
     }
@@ -45,6 +47,9 @@ class ProjectDetail extends Component {
     componentWillMount = async() => {
         let id = window.location.pathname.split('/')[2]
         const res = await GetApi('projects/'+ id);
+        this.setState({
+            projectId: id
+        })
 
         // // console.log(res);          // data, error,status
         // // console.log(res.status);   // 200 means success
@@ -131,7 +136,7 @@ class ProjectDetail extends Component {
     }
 
     goToEdit = () => {
-        
+        browserHistory.push('/edit/' + this.state.projectId)
     }
 
 
