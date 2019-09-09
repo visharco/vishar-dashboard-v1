@@ -17,8 +17,15 @@ class EditPRojectComponent extends Component {
     }
     render() { 
         return ( 
-            <div className="">
-                 
+            <div className="CreateNewProject">
+               
+                {this.state.isLoadingGetData ? <LoadingComponent/> : ''}
+                <div className="PE-title" >
+                    ویرایش پروژه
+                </div>
+                <div className="card-container">
+                    <h1>hwlloooo</h1>
+                </div>
             </div>
          );
     }

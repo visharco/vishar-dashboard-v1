@@ -1012,6 +1012,11 @@ padding: 10px 5px;
 
 }
 
+.card-container {
+    width: 100%;
+    background-color: #fff;
+}
+
 .CNP-logoBox span{ 
     font-size: 16px;
     padding: 5px 0;
