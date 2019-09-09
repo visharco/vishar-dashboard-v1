@@ -16,6 +16,18 @@ class EditPRojectComponent extends Component {
         super(props);
         this.state = {  }
     }
+    //
+    // get data from input by event target -------------------------------------------------------------->
+    //
+    changedHandler = (e) => {
+        this.setState({
+            [e.target.name]: e.target.value
+        })
+    }
+
+    _CallSave = () => {
+        alert("ssss")
+    }
     render() { 
         return ( 
             <div className="CreateNewProject">
