@@ -42,7 +42,7 @@ class Project extends Component {
                         <div className="p-right-text" >
                             <div className="p-status-box" >
                                 <h1>{this.props.data.title}</h1>
-                                <div className="project-details-number">
+                                <div className="project-details-number">    
                                     <p className={this.props.data.status} >{this.getStatus(this.props.data.status)}</p>
                                     <p className="count-desgin">{this.props.data.count_designs} طرح</p>
                                 </div>

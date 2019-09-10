@@ -35,12 +35,7 @@ class SingleProject extends Component {
 
     componentWillMount = async() => {
 
-        const res = await GetApi('projects');
-
-         console.log(res);          // data, error,status
-        // console.log(res.status);   // 200 means success
-        // console.log(res.error);    // show the error from server
-        // console.log(res.data);     // show the data from server
+        const res = await GetApi('projects'); 
 
         this.setState({
             myProjects:res.data

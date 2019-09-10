@@ -17,6 +17,7 @@ import SingleProjectScreen from './component/singleProject/singleProject'
 import CollaborateProjectScreen from './component/collaborateProject/collaborateProject';
 import ProjectDetailScreen from './component/projectDetail/projectDetail';
 import CreateNewProjectScreen from './component/createNewProject/createNewProject';
+import EditProjectScreen from './component/createNewProject/editProject';
 import NotificationScreen from './component/notification/notification';
 import MessageScreen from './component/Message/Message';
 import ChatBoxScreen from './component/ChatBox/ChatBox';
@@ -80,6 +81,7 @@ class RouterComponent extends Component {
                                 <Route path="collaborateProject" component={CollaborateProjectScreen} />
                                 <Route path="projectDetail/:id" component={ProjectDetailScreen} />
                                 <Route path="createNewProject" component={CreateNewProjectScreen} />
+                                <Route path="edit/:id" component={EditProjectScreen} />
                                 <Route path="notification" component={NotificationScreen} />
                                 <Route path="message" component={MessageScreen} />
                                 <Route path="chatBox" component={ChatBoxScreen} />

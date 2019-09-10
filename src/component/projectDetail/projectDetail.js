@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { browserHistory } from 'react-router';
 
 //
 //
@@ -37,22 +38,17 @@ class ProjectDetail extends Component {
             designerLikes: 10,
             viewProject: false,
             myProject: [],
-            desginId:0
+            desginId:0,
+            projectId:0
 
         }
     }
 
     componentWillMount = async() => {
         let id = window.location.pathname.split('/')[2]
-        const res = await GetApi('projects/'+ id);
-
-        // // console.log(res);          // data, error,status
-        // // console.log(res.status);   // 200 means success
-        // // console.log(res.error);    // show the error from server
-        // // console.log(res.data);     // show the data from server
-        // console.log(res.data)
-
+        const res = await GetApi('projects/'+ id);  
         await this.setState({
+            projectId: id ,
             myProject:res.data,
             idInvoiceProject:res.data.invoice.id
         })
@@ -130,6 +126,10 @@ class ProjectDetail extends Component {
         })
     }
 
+    goToEdit = () => {
+        browserHistory.push('/edit/' + this.state.projectId)
+    }
+
 
 
     render() {
@@ -173,11 +173,19 @@ class ProjectDetail extends Component {
 
                 <div className="PD-desc-up" >
                     <div className=" payment-again">
-                        <div>
+                        <div className="edit-project-buttos">
                             {this.state.myProject.status === 'pending' ?
                                 <div className="DPD-submit-design" onClick={this.goToSubmitInvoice} >
                             پرداخت مجدد
                                 </div>
+                                
+                                : '' 
+                            }
+                            {this.state.myProject.status === 'pending' ?
+                                <div className="  edit-button" onClick={this.goToEdit} >
+                            ویرایش
+                                </div>
+                                
                                 : '' 
                             }
                         </div>

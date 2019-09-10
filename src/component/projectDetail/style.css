@@ -45,9 +45,42 @@ padding:40px 30px;
     padding: 30px 0px 0px;
 }
 
+.edit-button {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(255, 209, 81);
+    /* width: 150px; */
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 16px;
+    padding: 0px 20px;
+    cursor: pointer;
+    transition: all .2s linear;
+
+}
+.edit-button:hover {
+    opacity: 0.5;
+}
+
 .PD-desc-texts{
     text-align: right;
     padding: 50px;
+}
+
+.edit-project-buttos {
+    display: flex;
+    flex-direction: row;
+
+}
+.edit-project-buttos div {
+   margin-right: 10px;
 }
 
 .PD-desc-text{
