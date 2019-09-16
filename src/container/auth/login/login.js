@@ -162,7 +162,7 @@ class LoginComponent extends Component {
         })
     }
 
-    showPassword = () => {
+    showPassword = () => { 
         document.getElementById('passwordLogin').type="text"
     }    
     hidePassword = () => {
