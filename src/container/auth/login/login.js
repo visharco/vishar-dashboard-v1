@@ -62,6 +62,17 @@ class LoginComponent extends Component {
 
     }
 
+    //
+    //
+    enterPressed =  (event) => { 
+        var code = event.keyCode || event.which;
+        if(code === 13) { //13 is the enter keycode
+            if(event.target.name === 'passwordRegisterTwo') // if is from phone input. the name get by event
+                this._onClickRegister();             
+            else if(event.target.name === 'passwordLogin') // if is from sms activity code input. the name get by event
+                this._callLogin();
+        } 
+    }
     
     goToLogin = () => {
         browserHistory.push('/register');
@@ -310,7 +321,7 @@ class LoginComponent extends Component {
                         val={this.state.passwordLogin} 
                     /> */}
                     <img src={iconPassword}  className="login-input-icon"/>
-                    <input className="login-input" id="passwordLogin" name="passwordLogin"  type="password" value={this.state.passwordLogin} onChange={this.changedHandler} placeholder="کلمه عبور" />
+                    <input className="login-input" id="passwordLogin" name="passwordLogin" onKeyPress={this.enterPressed}   type="password" value={this.state.passwordLogin} onChange={this.changedHandler} placeholder="کلمه عبور" />
                     <div className="eye-show" onMouseDown={this.showPassword} onMouseUp={this.hidePassword}></div>
                 </div>
                 <p onClick={() => this._actionModal('open')} className="forget-password-link">رمز عبور خود را فراموش کرده اید؟</p>
@@ -441,6 +452,7 @@ class LoginComponent extends Component {
                         onChange={this.changedHandler} 
                         placeholder="تکرار رمز عبور"
                         maxLength="12"
+                        onKeyPress={this.enterPressed}
                     />
                 </div>
 
