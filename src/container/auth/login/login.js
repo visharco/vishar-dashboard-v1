@@ -161,7 +161,6 @@ class LoginComponent extends Component {
             [e.target.name]: e.target.value
         })
     }
-
     showPassword = () => { 
         document.getElementById('passwordLogin').type="text"
     }    
