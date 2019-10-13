@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './style.css';
 
 class MatchComponent extends Component {
     constructor(props) {
@@ -7,8 +8,13 @@ class MatchComponent extends Component {
     }
     render() { 
         return ( 
-            <div>
-                <h1>Match component</h1>
+            <div className="Message" >
+                <div className="M-title" >
+                    معرفی مسابقه
+                </div>
+                <div className="matc-container" >
+                    <h1>ss</h1>
+                </div>
             </div>
          );
     }

@@ -209,7 +209,7 @@ class DashboardMenu extends Component {
                             </div>
                             <div className="DM-body-child" onClick={this.goToCollaborateProject} >
                                 <p>معرفی مسابقه </p>
-                                <i class="fa fa-trophy"></i>
+                                <i className="fa fa-trophy"></i>
                             </div>
                             {/* <div className="DM-body-child" onClick={this.goToMessage} >
                                 <p>پیامها</p>
