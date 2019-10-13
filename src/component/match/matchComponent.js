@@ -15,7 +15,21 @@ class MatchComponent extends Component {
                 </div>
                 <div className="matc-container row" >
                     <div className="col-50">
-                        <Input placeholder="name" />
+                    <Input 
+                        type={'text'} 
+                        name={'email'}
+                        placeholder={'Email'}
+                        changed={this.changedHandler}
+                        error={this.state.forgetEmailError} // if you want show error pass error text to this props
+                    />
+                    <Input 
+                        type={'text'} 
+                        name={'email'}
+                        placeholder={'Email'}
+                        changed={this.changedHandler}
+                        error={this.state.forgetEmailError} // if you want show error pass error text to this props
+                    />
+
                     </div>
                     <div className="col-50">dddd</div>
                 </div>
