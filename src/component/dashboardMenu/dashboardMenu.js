@@ -110,8 +110,8 @@ class DashboardMenu extends Component {
     gotoCreateProject = () => {
         browserHistory.push('/createNewProject');
     }
-    goToCollaborateProject = () => {
-        browserHistory.push('/collaborateProject');
+    goToMatch = () => {
+        browserHistory.push('/match');
     }
     goToMessage = () => {
         browserHistory.push('/Message');
@@ -207,7 +207,7 @@ class DashboardMenu extends Component {
                                 <p>پروژه های من</p>
                                 <i className="fas fa-layer-group"></i>
                             </div>
-                            <div className="DM-body-child" onClick={this.goToCollaborateProject} >
+                            <div className="DM-body-child" onClick={this.goToMatch} >
                                 <p>معرفی مسابقه </p>
                                 <i className="fa fa-trophy"></i>
                             </div>
