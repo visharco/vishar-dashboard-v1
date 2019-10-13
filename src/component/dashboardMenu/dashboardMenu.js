@@ -201,18 +201,16 @@ class DashboardMenu extends Component {
                             </div>
                             <div className="DM-body-child" onClick={this.gotoCreateProject} >
                                 <p>معرفی پروژه جدید</p>
-                                {/* <img src={employee} alt="فردی" /> */}
                                 <i className="fas fa-project-diagram"></i>
                             </div>
                             <div className="DM-body-child" onClick={this.goToSingleProject} >
                                 <p>پروژه های من</p>
-                                {/* <img src={employee} alt="فردی" /> */}
                                 <i className="fas fa-layer-group"></i>
                             </div>
-                            {/* <div className="DM-body-child" onClick={this.goToCollaborateProject} >
-                                <p>پروژه های همکاری</p>
+                            <div className="DM-body-child" onClick={this.goToCollaborateProject} >
+                                <p>معرفی مسابقه </p>
                                 <img src={employees} alt="همکاری" />
-                            </div> */}
+                            </div>
                             {/* <div className="DM-body-child" onClick={this.goToMessage} >
                                 <p>پیامها</p>
                                 <img src={message} alt="پیام ها" />
