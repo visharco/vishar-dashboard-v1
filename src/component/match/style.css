@@ -5,3 +5,9 @@
     width: 100%;
     ;
 }
+
+.ckeditor-container {
+    border: 2px solid #2f9cda;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
