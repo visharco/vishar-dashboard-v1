@@ -14,6 +14,13 @@
     border-radius: 5px;
 }
 
+.select-match {
+    width: 300px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 5px;
+}
+
 .CNP-title{
     font-size: 25px;
     font-weight: 900;

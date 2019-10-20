@@ -604,6 +604,15 @@ class CreateNewProject extends Component {
                 : ''
         );
 
+        const renderMatch = (
+            <div>
+                <h3>برای ایجاد مسابقه این پلن را انتخاب نمایید</h3>
+                <div className="select-match">
+                    <p>انتخاب پلن مسابقه</p>
+                </div>
+            </div>
+        )
+
         const renderDuration = (
             this.state.durations ?
                 this.state.durations.map((data, index) => {
@@ -989,6 +998,7 @@ class CreateNewProject extends Component {
 
 
                             </div>
+                            {renderMatch}
 
 
                         </div>
