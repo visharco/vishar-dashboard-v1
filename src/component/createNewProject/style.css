@@ -15,10 +15,14 @@
 }
 
 .select-match {
-    width: 300px;
+    width: 100%;
     height: 50px;
-    background-color: blue;
+    background-color: #fcfcfc;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
 }
 
 .CNP-title{

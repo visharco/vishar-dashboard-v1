@@ -608,7 +608,7 @@ class CreateNewProject extends Component {
             <div>
                 <h3>برای ایجاد مسابقه این پلن را انتخاب نمایید</h3>
                 <div className="select-match">
-                    <p>انتخاب پلن مسابقه</p>
+                    <input type="checkbox" name="vehicle1" value="Bike"/> I have a bike
                 </div>
             </div>
         )
@@ -689,6 +689,10 @@ class CreateNewProject extends Component {
 
 
                         </div>
+
+                        {renderMatch}
+
+
                         <div className="CNP-btnBox-regular" id="aras" ref={this.target1}>
                             <div className="CNP-100">
                                 <img src={success} alt="موفق"/>
@@ -998,7 +1002,7 @@ class CreateNewProject extends Component {
 
 
                             </div>
-                            {/* {renderMatch} */}
+                       {/* TODO */}
 
 
                         </div>
