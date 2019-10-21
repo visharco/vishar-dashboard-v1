@@ -422,9 +422,9 @@ class CreateNewProject extends Component {
     paymentHandler = async () => {
 
 
-        this.setState({
-            isLoadingGetData: true
-        })
+        // this.setState({
+        //     isLoadingGetData: true
+        // })
 
 
         //
@@ -436,6 +436,25 @@ class CreateNewProject extends Component {
 
    
         if(this.state.complete === true){
+            alert("its match");
+            console.log("match")
+
+            data.append('category_id', this.state.categoryId);
+            data.append('category_plan_id', 0);
+            data.append('category_timing_id',0);
+            data.append('title', this.state.title);
+            data.append('desc', this.state.description);
+            data.append('desc_more', this.state.otherDescription)
+            var details = JSON.stringify({age: 12}); // TODO fixed later for get colors and fonts
+            data.append('colors', details);
+            data.append('fonts', details);
+            data.append('price', this.state.matchPrice);
+        
+
+        }else {
+
+            console.log("un match")
+
 
             data.append('category_id', this.state.categoryId);
             data.append('category_plan_id', this.state.category_plan_id);
@@ -447,8 +466,6 @@ class CreateNewProject extends Component {
             data.append('colors', details);
             data.append('fonts', details);
 
-        }else {
-
         }
 
         //// console.log(this.state.fileZop)
@@ -457,19 +474,18 @@ class CreateNewProject extends Component {
                 data.append('path[]', file, file.name);
             }
 
-
-        // console.log(`${data}`)
-
-
-        const res = await PostToApii(data, 'projects');
+ 
 
 
-        window.location = res.data.url;
+        // const res = await PostToApii(data, 'projects');
 
 
-        this.setState({
-            isLoadingGetData: false
-        })
+        // window.location = res.data.url;
+
+
+        // this.setState({
+        //     isLoadingGetData: false
+        // })
 
 
     }
@@ -718,7 +734,7 @@ class CreateNewProject extends Component {
 
                         </div>
 
-                        {renderMatch}
+                       
 
 
                         <div className="CNP-btnBox-regular" id="aras" ref={this.target1}>
@@ -1030,7 +1046,8 @@ class CreateNewProject extends Component {
 
 
                             </div>
-                       {/* TODO */}
+                            
+                            {renderMatch}
 
 
                         </div>
