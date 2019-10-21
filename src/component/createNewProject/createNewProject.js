@@ -421,17 +421,6 @@ class CreateNewProject extends Component {
     //PAYMENT 
     paymentHandler = async () => {
 
-        //  console.log(`
-        // category_id : ${this.state.categoryId}
-        // category_plan_id : ${this.state.category_plan_id}
-        // category_timing_id : ${this.state.category_timing_id}
-        // title : ${this.state.title}
-        // desc : ${this.state.description}
-        // desc_more : ${this.state.otherDescription}
-        // colors :
-        // fonts :
-        // path :
-        // `);
 
         this.setState({
             isLoadingGetData: true
@@ -445,15 +434,22 @@ class CreateNewProject extends Component {
 
         const data = new FormData();
 
-        data.append('category_id', this.state.categoryId);
-        data.append('category_plan_id', this.state.category_plan_id);
-        data.append('category_timing_id', this.state.category_timing_id);
-        data.append('title', this.state.title);
-        data.append('desc', this.state.description);
-        data.append('desc_more', this.state.otherDescription)
-        var details = JSON.stringify({age: 12}); // TODO fixed later for get colors and fonts
-        data.append('colors', details);
-        data.append('fonts', details);
+   
+        if(this.state.complete === true){
+
+            data.append('category_id', this.state.categoryId);
+            data.append('category_plan_id', this.state.category_plan_id);
+            data.append('category_timing_id', this.state.category_timing_id);
+            data.append('title', this.state.title);
+            data.append('desc', this.state.description);
+            data.append('desc_more', this.state.otherDescription)
+            var details = JSON.stringify({age: 12}); // TODO fixed later for get colors and fonts
+            data.append('colors', details);
+            data.append('fonts', details);
+
+        }else {
+
+        }
 
         //// console.log(this.state.fileZop)
         if (this.state.fileZop[0])
@@ -466,11 +462,6 @@ class CreateNewProject extends Component {
 
 
         const res = await PostToApii(data, 'projects');
-
-        // console.log(res);          // data, error,status
-        // console.log(res.status);   // 200 means success
-        // console.log(res.error);    // show the error from server
-        // console.log(res.data);     // show the data from server
 
 
         window.location = res.data.url;
@@ -627,17 +618,18 @@ class CreateNewProject extends Component {
 
                 {this.state.complete ? 
                       <div className="match-input">
+                          <p>لطفا بودجه مسابقه را به صورت تومان وارد نمایید</p>
                         
                         <Input
-                                    type={'text'}
+                                    type={'number'}
                                     name={'matchPrice'}
                                     placeholder={'بودجه مسابقه'}
                                     changed={this.changedHandler}
                                     error={this.state.errorTitle}
                                     val={this.state.matchPrice}
                                 />
-                                       <Input
-                                    type={'text'}
+                        <Input
+                                    type={'number'}
                                     name={'matchTime'}
                                     placeholder={'زمان مسابقه'}
                                     changed={this.changedHandler}
