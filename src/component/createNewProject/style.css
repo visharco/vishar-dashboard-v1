@@ -25,6 +25,10 @@
     padding: 5px;
 }
 
+.select-match p {
+    padding: 0 5px;
+}
+
 .CNP-title{
     font-size: 25px;
     font-weight: 900;
@@ -81,6 +85,10 @@
     margin: 50px auto;
     background-color: #fff;
     position: unset;
+}
+
+.match-input {
+    width: 50%;
 }
 
 .CNP-100{

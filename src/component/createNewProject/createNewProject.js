@@ -72,6 +72,7 @@ class CreateNewProject extends Component {
             projectDurationPrice: 0,
             category_plan_id: 0,
             category_timing_id: 0,
+            complete: false
 
 
         }
@@ -552,6 +553,13 @@ class CreateNewProject extends Component {
         })
     }
 
+    handleChangeCheck =() => {
+            
+        this.setState({
+            complete: !this.state.complete
+          });
+    }
+
     render() {
 
         //
@@ -571,6 +579,7 @@ class CreateNewProject extends Component {
             }) : ''
         )
 
+    
         //
         // Get all plans from api ------------------------>
         //
@@ -608,8 +617,35 @@ class CreateNewProject extends Component {
             <div>
                 <h3>برای ایجاد مسابقه این پلن را انتخاب نمایید</h3>
                 <div className="select-match">
-                    <input type="checkbox" name="vehicle1" value="Bike"/> I have a bike
+                    <input type="checkbox" name="match" 
+                    id="match"  
+                    checked={this.state.complete}
+                    onChange={this.handleChangeCheck}
+                    />
+                    <p> برای انتخاب مسابقه کلیک نمایید</p>
                 </div>
+
+                {this.state.complete ? 
+                      <div className="match-input">
+                        
+                        <Input
+                                    type={'text'}
+                                    name={'matchPrice'}
+                                    placeholder={'بودجه مسابقه'}
+                                    changed={this.changedHandler}
+                                    error={this.state.errorTitle}
+                                    val={this.state.matchPrice}
+                                />
+                                       <Input
+                                    type={'text'}
+                                    name={'matchTime'}
+                                    placeholder={'زمان مسابقه'}
+                                    changed={this.changedHandler}
+                                    error={this.state.errorTitle}
+                                    val={this.state.matchTime}
+                                />
+                      </div>
+                : ''}
             </div>
         )
 
