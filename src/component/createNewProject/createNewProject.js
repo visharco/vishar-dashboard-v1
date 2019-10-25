@@ -1044,7 +1044,6 @@ class CreateNewProject extends Component {
 
                                 {renderPlans}
 
-
                             </div>
                             
                             {renderMatch}
@@ -1089,41 +1088,7 @@ class CreateNewProject extends Component {
                     
                             <div className="CNP-duration">
 
-                                {/* <input type="radio" id="duration1" name="select" value="1" />
-                                <label htmlFor="duration1">
-                                    <div className="CNPD-title" >
-                                        <p>استاندارد ۷ روز</p>
-                                        <h1>رایگان</h1>
-                                    </div>
-                                </label> */}
-
-
-                                {/* <input type="radio" id="duration2" name="select" value="2" />
-                                <label htmlFor="duration2">
-
-                                    <div className="CNPD-title" >
-                                        <p>4 روز </p>
-                                        <h1>250000 ت</h1>
-                                    </div>
-                                </label> */}
-
-
-                                {/* <input type="radio" id="duration3" name="select" value="3" />
-                                <label htmlFor="duration3">
-
-                                    <div className="CNPD-title" >
-                                        <p>2 روز </p>
-                                        <h1>450000 ت</h1>
-                                    </div>
-                                </label> */}
-
-                                {/* <input type="radio" id="duration4" name="select" value="3" />
-                                <label htmlFor="duration4">
-                                    <div className="CNPD-title" >
-                                        <p>۲۴ ساعت </p>
-                                        <h1>900000 ت</h1>
-                                    </div>
-                                </label> */}
+                           
                                 {renderDuration}
 
                             </div>
