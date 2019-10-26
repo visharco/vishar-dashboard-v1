@@ -477,15 +477,15 @@ class CreateNewProject extends Component {
  
 
 
-        // const res = await PostToApii(data, 'projects');
+        const res = await PostToApii(data, 'projects');
 
 
-        // window.location = res.data.url;
+        window.location = res.data.url;
 
 
-        // this.setState({
-        //     isLoadingGetData: false
-        // })
+        this.setState({
+            isLoadingGetData: false
+        })
 
 
     }
