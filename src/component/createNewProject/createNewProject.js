@@ -434,10 +434,10 @@ class CreateNewProject extends Component {
 
         const data = new FormData();
 
-   
+        console.log(this.state.complete)
         if(this.state.complete === true){
-            alert("its match");
-            console.log("match")
+            // alert("its match");
+            // console.log("match")
 
             data.append('category_id', this.state.categoryId);
             data.append('category_plan_id', 0);
@@ -453,7 +453,7 @@ class CreateNewProject extends Component {
 
         }else {
 
-            console.log("un match")
+             console.log("un match")
 
 
             data.append('category_id', this.state.categoryId);
