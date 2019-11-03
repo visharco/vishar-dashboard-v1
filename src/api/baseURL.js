@@ -4,7 +4,7 @@
  //
  
 
- const url ='http://dev.api.vishar.com' ;
+ const url ='http://api.vishar.com' ;
  const versioan ='v1' ;
  const api ='api' ;
 
