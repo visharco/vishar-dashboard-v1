@@ -23,6 +23,7 @@ import MessageScreen from './component/Message/Message';
 import ChatBoxScreen from './component/ChatBox/ChatBox';
 import successPaymentScreen from './component/createNewProject/successPayment/successPayment';
 import faildPaymentScreen from './component/createNewProject/faildPayment/faildPayment';
+import matchScreen from './component/match/matchComponent';
 
 
 import DesignerProfileScreen from './component/Designer/DesignerProfile/DesignerProfile'
@@ -87,6 +88,7 @@ class RouterComponent extends Component {
                                 <Route path="chatBox" component={ChatBoxScreen} />
                                 <Route path="/success-payment" component={successPaymentScreen} />
                                 <Route path="faild-payment" component={faildPaymentScreen} />
+                                <Route path="match" component={matchScreen} />
                         
                             
         

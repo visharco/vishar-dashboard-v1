@@ -53,6 +53,7 @@ class Project extends Component {
                             </p>
                         </div>
                         <div className="p-right-tags" >
+                            {console.log(this.props.data)}
                             <p>{this.props.data.invoice.category}</p>
                         </div>
                     </div>

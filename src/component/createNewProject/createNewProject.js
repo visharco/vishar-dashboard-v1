@@ -72,6 +72,7 @@ class CreateNewProject extends Component {
             projectDurationPrice: 0,
             category_plan_id: 0,
             category_timing_id: 0,
+            complete: false
 
 
         }
@@ -420,21 +421,10 @@ class CreateNewProject extends Component {
     //PAYMENT 
     paymentHandler = async () => {
 
-        //  console.log(`
-        // category_id : ${this.state.categoryId}
-        // category_plan_id : ${this.state.category_plan_id}
-        // category_timing_id : ${this.state.category_timing_id}
-        // title : ${this.state.title}
-        // desc : ${this.state.description}
-        // desc_more : ${this.state.otherDescription}
-        // colors :
-        // fonts :
-        // path :
-        // `);
 
-        this.setState({
-            isLoadingGetData: true
-        })
+        // this.setState({
+        //     isLoadingGetData: true
+        // })
 
 
         //
@@ -444,15 +434,39 @@ class CreateNewProject extends Component {
 
         const data = new FormData();
 
-        data.append('category_id', this.state.categoryId);
-        data.append('category_plan_id', this.state.category_plan_id);
-        data.append('category_timing_id', this.state.category_timing_id);
-        data.append('title', this.state.title);
-        data.append('desc', this.state.description);
-        data.append('desc_more', this.state.otherDescription)
-        var details = JSON.stringify({age: 12}); // TODO fixed later for get colors and fonts
-        data.append('colors', details);
-        data.append('fonts', details);
+        console.log(this.state.complete)
+        if(this.state.complete === true){
+            // alert("its match");
+            // console.log("match")
+
+            data.append('category_id', this.state.categoryId);
+            data.append('category_plan_id', 0);
+            data.append('category_timing_id',0);
+            data.append('title', this.state.title);
+            data.append('desc', this.state.description);
+            data.append('desc_more', this.state.otherDescription)
+            var details = JSON.stringify({age: 12}); // TODO fixed later for get colors and fonts
+            data.append('colors', details);
+            data.append('fonts', details);
+            data.append('price', this.state.matchPrice);
+        
+
+        }else {
+
+             console.log("un match")
+
+
+            data.append('category_id', this.state.categoryId);
+            data.append('category_plan_id', this.state.category_plan_id);
+            data.append('category_timing_id', this.state.category_timing_id);
+            data.append('title', this.state.title);
+            data.append('desc', this.state.description);
+            data.append('desc_more', this.state.otherDescription)
+            var details = JSON.stringify({age: 12}); // TODO fixed later for get colors and fonts
+            data.append('colors', details);
+            data.append('fonts', details);
+
+        }
 
         //// console.log(this.state.fileZop)
         if (this.state.fileZop[0])
@@ -460,16 +474,10 @@ class CreateNewProject extends Component {
                 data.append('path[]', file, file.name);
             }
 
-
-        // console.log(`${data}`)
+ 
 
 
         const res = await PostToApii(data, 'projects');
-
-        // console.log(res);          // data, error,status
-        // console.log(res.status);   // 200 means success
-        // console.log(res.error);    // show the error from server
-        // console.log(res.data);     // show the data from server
 
 
         window.location = res.data.url;
@@ -552,6 +560,13 @@ class CreateNewProject extends Component {
         })
     }
 
+    handleChangeCheck =() => {
+            
+        this.setState({
+            complete: !this.state.complete
+          });
+    }
+
     render() {
 
         //
@@ -571,6 +586,7 @@ class CreateNewProject extends Component {
             }) : ''
         )
 
+    
         //
         // Get all plans from api ------------------------>
         //
@@ -603,6 +619,43 @@ class CreateNewProject extends Component {
                 })
                 : ''
         );
+
+        const renderMatch = (
+            <div>
+                <h3>برای ایجاد مسابقه این پلن را انتخاب نمایید</h3>
+                <div className="select-match">
+                    <input type="checkbox" name="match" 
+                    id="match"  
+                    checked={this.state.complete}
+                    onChange={this.handleChangeCheck}
+                    />
+                    <p> برای انتخاب مسابقه کلیک نمایید</p>
+                </div>
+
+                {this.state.complete ? 
+                      <div className="match-input">
+                          <p>لطفا بودجه مسابقه را به صورت تومان وارد نمایید</p>
+                        
+                        <Input
+                                    type={'number'}
+                                    name={'matchPrice'}
+                                    placeholder={'بودجه مسابقه'}
+                                    changed={this.changedHandler}
+                                    error={this.state.errorTitle}
+                                    val={this.state.matchPrice}
+                                />
+                        <Input
+                                    type={'number'}
+                                    name={'matchTime'}
+                                    placeholder={'زمان مسابقه'}
+                                    changed={this.changedHandler}
+                                    error={this.state.errorTitle}
+                                    val={this.state.matchTime}
+                                />
+                      </div>
+                : ''}
+            </div>
+        )
 
         const renderDuration = (
             this.state.durations ?
@@ -680,6 +733,10 @@ class CreateNewProject extends Component {
 
 
                         </div>
+
+                       
+
+
                         <div className="CNP-btnBox-regular" id="aras" ref={this.target1}>
                             <div className="CNP-100">
                                 <img src={success} alt="موفق"/>
@@ -987,8 +1044,9 @@ class CreateNewProject extends Component {
 
                                 {renderPlans}
 
-
                             </div>
+                            
+                            {renderMatch}
 
 
                         </div>
@@ -1030,41 +1088,7 @@ class CreateNewProject extends Component {
                     
                             <div className="CNP-duration">
 
-                                {/* <input type="radio" id="duration1" name="select" value="1" />
-                                <label htmlFor="duration1">
-                                    <div className="CNPD-title" >
-                                        <p>استاندارد ۷ روز</p>
-                                        <h1>رایگان</h1>
-                                    </div>
-                                </label> */}
-
-
-                                {/* <input type="radio" id="duration2" name="select" value="2" />
-                                <label htmlFor="duration2">
-
-                                    <div className="CNPD-title" >
-                                        <p>4 روز </p>
-                                        <h1>250000 ت</h1>
-                                    </div>
-                                </label> */}
-
-
-                                {/* <input type="radio" id="duration3" name="select" value="3" />
-                                <label htmlFor="duration3">
-
-                                    <div className="CNPD-title" >
-                                        <p>2 روز </p>
-                                        <h1>450000 ت</h1>
-                                    </div>
-                                </label> */}
-
-                                {/* <input type="radio" id="duration4" name="select" value="3" />
-                                <label htmlFor="duration4">
-                                    <div className="CNPD-title" >
-                                        <p>۲۴ ساعت </p>
-                                        <h1>900000 ت</h1>
-                                    </div>
-                                </label> */}
+                           
                                 {renderDuration}
 
                             </div>

@@ -153,17 +153,9 @@ class SubmitDesign extends Component {
                     this.setState({
                         progressPercent : progressPercent
                     })
-                    // if(progressPercent === 100){
-                    //     this.setState({
-                    //         isLoadingGetData: false,
-                    //         submitDesignSuccess: true
-                    //     })
-                    // }
                 }
             })
                 .then(res => {
-                    // console.log(res)
-    
                     if (res.status === 200)
                         this.setState({
                             isLoadingGetData: false,
