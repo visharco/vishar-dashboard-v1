@@ -802,7 +802,9 @@ class CreateNewProject extends Component {
 
                             <div className="CNP-upload">
                                 <div>
-                                    <Dropzone onDrop={acceptedFiles => {
+                                    <Dropzone 
+                                        accept='image/jpeg, image/png, image/gif, application/zip'
+                                    onDrop={acceptedFiles => {
                                         // TODO delete not working.!
                                         // console.log(acceptedFiles);
 
