@@ -90,6 +90,14 @@
     position: unset;
 }
 
+.category-icon {
+    width: 50px;
+    height: 50px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
 .match-input {
     width: 50%;
     padding: 10px;
@@ -195,7 +203,7 @@ width: 40px;
 }
 
 .CNP-logoBox{
-    width: 200px;
+    /* width: 200px;
     height: 200px;
     background-color: #f6f6f6;
     margin: 10px ;
@@ -210,7 +218,18 @@ width: 40px;
     justify-content: flex-end;
     border-radius: 5px;
     border: 2px solid #f2f2f2;
+    cursor: pointer; */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #f6f6f6;
+    margin: 3px;
+    border-radius: 5px;
+    border: 2px solid #f2f2f2;
     cursor: pointer;
+
 }
 .CNP-logoBoxTitle{
     font-size: 10px;
@@ -248,11 +267,19 @@ width: 40px;
     background-color: #7db5ce;
 }
 .CNP-logoBox{
-    width: 150px;
+    /* width: 150px;
     height: 150px;
     transition: 500ms all;
     padding: 25px;
+    background-color: #f6f6f6; */
+
+    width: 225px;
+    height: 91px;
+    transition: 500ms all;
+    padding: 25px;
     background-color: #f6f6f6;
+
+
   }
 .CNP-logoBox:hover{
     background-color: #fff;

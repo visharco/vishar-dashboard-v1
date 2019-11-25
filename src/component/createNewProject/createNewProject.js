@@ -578,7 +578,8 @@ class CreateNewProject extends Component {
                     <input type="radio" name="emotion" id={index} className="input-hidden"
                            onClick={() => this.getPlan(data.id, data.title, data.pay)}/>
                     <label htmlFor={index} >
-                        <div className="CNP-logoBox" style={{backgroundImage: 'url(' + data.icon + ')'}}>
+                        <div className="CNP-logoBox" >
+                            <div className="category-icon" style={{backgroundImage: 'url(' + data.icon + ')'}}></div>
                             <span className="CNP-logoBoxTitle">{data.title}</span>
                         </div>
                     </label>
