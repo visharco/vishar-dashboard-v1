@@ -207,10 +207,10 @@ class DashboardMenu extends Component {
                                 <p>پروژه های من</p>
                                 <i className="fas fa-layer-group"></i>
                             </div>
-                            <div className="DM-body-child" onClick={this.goToMatch} >
+                            {/* <div className="DM-body-child" onClick={this.goToMatch} >
                                 <p>معرفی مسابقه </p>
                                 <i className="fa fa-trophy"></i>
-                            </div>
+                            </div> */}
                             {/* <div className="DM-body-child" onClick={this.goToMessage} >
                                 <p>پیامها</p>
                                 <img src={message} alt="پیام ها" />
