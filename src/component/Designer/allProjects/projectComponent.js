@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
-import './style.css';
- 
 import Button from '../../common/Button/Button';
-
-import design1 from '../../../assets/images/defualtProjectImage.png'
 import layersicon from '../../../assets/icons/layersicon.svg'
 import clock from '../../../assets/icons/clock.svg'
-import comment from '../../../assets/icons/comment.svg'
 import PriceDigit from '../../priceDigit/priceDigit'; 
+import './style.css';
 
 class ProjectComponent extends Component {
     constructor(props) {
@@ -19,7 +15,7 @@ class ProjectComponent extends Component {
  
 
     showProject (id)  {
-        window.location = 'http://dashboard.vishar.com/DesignerProjectDetail/'+ id
+        window.location = 'http://dashboard.ddtarh.ir/DesignerProjectDetail/'+ id
     }
 
 

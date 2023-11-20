@@ -150,7 +150,7 @@ class DashboardComponent extends Component {
                         <div className="col-50">
                             <h2>بلاگ ویشار</h2>
                             <p>اخبار تکنولوژی و جدیدترین مطالب آموزشی در زمینه طراحی را در بلاگ ویشار مطالعه نمایید</p>
-                            <div className="btn btn-fff" onClick={() => window.open("http://www.blog.vishar.com")}>
+                            <div className="btn btn-fff" onClick={() => window.open("http://www.blog.ddtarh.ir")}>
                                 <p>مشاهده بلاگ</p>
                             </div>
                         </div>
@@ -231,7 +231,7 @@ class DashboardComponent extends Component {
                         <div className="col-50">
                             <h2>بلاگ ویشار</h2>
                             <p>اخبار تکنولوژی و جدیدترین مطالب آموزشی در زمینه طراحی را در بلاگ ویشار مطالعه نمایید</p>
-                            <div className="btn btn-fff" onClick={() => window.open("http://www.blog.vishar.com")}>
+                            <div className="btn btn-fff" onClick={() => window.open("http://www.blog.ddtarh.ir")}>
                                 <p>مشاهده بلاگ</p>
                             </div>
                         </div>

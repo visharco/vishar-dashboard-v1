@@ -1,11 +1,4 @@
 import React, { Component } from 'react';
-
-//
-//
-//
-
-import walletgrey from './../../../assets/icons/walletgrey.svg'
-
 import './style.css';
 
 
@@ -17,6 +10,8 @@ class DesignerNoWallet extends Component {
     }
 
     render() {
+        const walletgrey = './../../../assets/icons/walletgrey';
+
         return (
             <div className="DesignerNoWallet">
                 <div className="DesignerNoWalletBox" >

@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
-
-
-
-
-import './style.css';
 import MessageBox from '../MessageBox/MessageBox';
 import MyMessageBox from '../myMessageBox/myMessageBox';
 import clip from './../../assets/icons/clip.svg';
 import deleted from '../../assets/icons/delete.svg'
 import slide2 from './../../assets/images/slide2.png'
+import './style.css';
 
 
 class ChatBox extends Component {
@@ -16,8 +12,6 @@ class ChatBox extends Component {
         super(props);
         this.state = {}
     }
-
-  
 
     messageInputFocus = () => {
 

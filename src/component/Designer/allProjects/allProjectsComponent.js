@@ -23,7 +23,7 @@ class AllProjectsComponent extends Component {
     }
 
     showProject (id)  {
-        window.location = 'http://dashboard.vishar.com/DesignerProjectDetail/'+ id
+        window.location = 'http://dashboard.ddtarh.ir/DesignerProjectDetail/'+ id
     }
 
 

@@ -2,14 +2,10 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
 import Dropzone from 'react-dropzone';
-import StatusMessage from '../../component/StatusMessage/StatusMessage';
+import StatusMessage from '../StatusMessage/StatusMessage';
 import SweetAlert from 'sweetalert-react';
 import '../../../node_modules/sweetalert/dist/sweetalert.css';
-import PriceDigit from '../../component/priceDigit/priceDigit';
-
-//
-//
-//
+import PriceDigit from '../priceDigit/priceDigit';
 import color1 from '../../assets/images/color1.png'
 import color2 from '../../assets/images/color2.png'
 import color3 from '../../assets/images/color3.png'
@@ -19,26 +15,15 @@ import color6 from '../../assets/images/color6.png'
 import color7 from '../../assets/images/color7.png'
 import color8 from '../../assets/images/color8.png'
 import font from '../../assets/icons/font.svg'
-import BC from './../../assets/icons/BC.svg'
-import PC from './../../assets/icons/PC.svg'
-import uxui from './../../assets/icons/uxui.svg'
-import threedot from './../../assets/icons/threedot.svg'
-import logoA from './../../assets/icons/logoA.svg'
-import content from './../../assets/icons/content.svg'
 import success from './../../assets/icons/success.svg'
 import document from '../../assets/icons/document.svg';
 import back from '../../assets/icons/back.svg';
-
-//
-//compoents
-//
-import Input from './../common/input/Input'
+import Input from '../common/input/Input'
 import TextArea from '../common/textarea/textarea'
-
-import './style.css';
 import GetToApi from '../../controler/getToApi';
 import PostToApii from '../../controler/postToApi';
 import LoadingComponent from '../loading/loadingComponent';
+import './style.css';
 
 
 class CreateNewProject extends Component {

@@ -1,12 +1,5 @@
 import React, { Component } from 'react';
-
-import comment from '../../../assets/icons/comment.svg'
-import like from '../../../assets/icons/like.svg'
-import tikgreen from '../../../assets/icons/tikgreen.svg'
 import loadingImage from '../../../assets/images/loading-image.gif'
-
-import logoo1 from './../../../assets/images/logoo1.png'
-
 import './style.css';
 
 
@@ -14,7 +7,7 @@ class DesignerLogo extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          projectImage : loadingImage
+            projectImage: loadingImage
         }
     }
     componentDidMount = () => {
@@ -23,10 +16,12 @@ class DesignerLogo extends Component {
         })
     }
     render() {
+        const comment = '../../../assets/icons/comment';
+        const like = '../../../assets/icons/like';
+        const tikgreen = '../../../assets/icons/tikgreen';
         return (
             <div className="DesignerLogo"
-                style={{ backgroundImage: 'url(' + this.state.projectImage+ ')' }}
-                // onClick={this.props.goToDesigns}
+                style={{ backgroundImage: 'url(' + this.state.projectImage + ')' }}
                 onClick={() => window.open(this.props.data.image)}
                 key={this.props.index}
             >
@@ -40,7 +35,7 @@ class DesignerLogo extends Component {
                 <div className="DesignerLogo-CL" >
                     <div className="DesignerLogo-II" >
                         <span>
-                           {this.props.data.project.category.title}
+                            {this.props.data.project.category.title}
                         </span>
                     </div>
 
@@ -65,20 +60,3 @@ class DesignerLogo extends Component {
 
 export default DesignerLogo;
 
-
-
-
-/*
-=====================================================================================
-How can use this button : ------->
-
-
-           <DesignerLogo
-                goToDesigns={this.goToDesigns}
-                logoFilter={this.logoFilter}
-                />
-
-
-=====================================================================================
-
-*/

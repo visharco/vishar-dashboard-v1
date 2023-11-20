@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
-
-import report from '../../../assets/icons/report.svg'
-import pic1 from '../../../assets/images/pic1.png'
+ import pic1 from '../../../assets/images/pic1.png'
 
 import './style.css';
 
 
 class DesignerLogoComment extends Component {
+
     constructor(props) {
         super(props);
         this.state = {}
+
     }
+
     render() {
+        const  report = '../../../assets/icons/report.svg'
+
         return (
             <div className="DesignerLogoComment" >
                 <div className="DLC-box" >

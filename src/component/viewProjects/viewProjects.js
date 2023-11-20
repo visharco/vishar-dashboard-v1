@@ -1,23 +1,8 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import GetToAPI from '../../controler/getToApi';
 import PostToApi from "../../controler/postToApi";
 import SweetAlert from "sweetalert-react";
-//
-//
-//
-
-import charlz from '../../assets/images/charlz.png';
-import img1 from '../../assets/images/img1.png';
-import img2 from '../../assets/images/img2.png';
-import tikw from '../../assets/icons/tikw.svg';
-import closethin from '../../assets/icons/closethin.svg';
-import report from '../../assets/icons/report.svg';
 import loadingImage from '../../assets/images/loading-image.gif'
-//
-//compoents
-//
-
-
 import './style.css';
 
 
@@ -73,14 +58,15 @@ class ViewProjects extends Component {
     };
 
     render() {
-
+        const tikw = '../../assets/icons/tikw.svg';
+        const closethin = '../../assets/icons/closethin.svg';
         const _renderDownloadFile = (
             <div>
-                <br/>
+                <br />
                 <div onClick={() => window.location = this.state.psd} className="btn-desgin-selected ">
                     دانلود فایل psd
                 </div>
-                <br/>
+                <br />
                 <div onClick={() => window.location = this.state.tif} className="btn-desgin-selected ">
                     دانلود فایل tif
                 </div>
@@ -94,14 +80,14 @@ class ViewProjects extends Component {
                     show={this.state.show}
                     title="اعلان"
                     text={this.state.alertText}
-                    onConfirm={() => this.setState({show: false})}
+                    onConfirm={() => this.setState({ show: false })}
                 />
                 <div className="VP-body">
                     <div className="VP-sliders">
-                        <img src={this.state.image} alt="طرحها"/>
+                        <img src={this.state.image} alt="طرحها" />
                     </div>
                     <div className="VP-left">
-                        <img className="VPL-close" src={closethin} alt="بستن" onClick={this.props.closeProject}/>
+                        <img className="VPL-close" src={closethin} alt="بستن" onClick={this.props.closeProject} />
                         {/*<div className="VP-report">*/}
                         {/*    <img src={report} alt="گزارش"/>*/}
                         {/*    گزارش*/}
@@ -110,7 +96,7 @@ class ViewProjects extends Component {
 
                         <div className="VPL-title">
                             <div className="VPLT-up">
-                                <img src={this.state.avatar} alt="عکس طراح"/>
+                                <img src={this.state.avatar} alt="عکس طراح" />
                                 <div className="VPLT-desc">
                                     <div className="VPLT-text">
                                         <p>طراحی توسط</p>
@@ -156,13 +142,13 @@ class ViewProjects extends Component {
                             </p>
                             {!this.state.is_finish ?
                                 <div className="VPL-button" onClick={this._finalproject}>
-                                    <img src={tikw} alt="تیک"/>
+                                    <img src={tikw} alt="تیک" />
                                     انتخاب طرح نهایی
                                 </div> :
                                 this.state.isSelected ?
                                     <div>
                                         <div className="btn-desgin-selected ">
-                                            <img src={tikw} alt="تیک"/>
+                                            <img src={tikw} alt="تیک" />
                                             این طرح به عنوان طرح نهایی انتخاب شد
                                         </div>
                                         {_renderDownloadFile}

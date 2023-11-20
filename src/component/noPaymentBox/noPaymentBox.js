@@ -1,13 +1,5 @@
 import React, { Component } from 'react';
-
-//
-//
-//
-
-import paymentgrey from '../../assets/icons/paymentgrey.svg'
-
 import './style.css';
-
 
 class NoPaymentBox extends Component {
 
@@ -17,6 +9,8 @@ class NoPaymentBox extends Component {
     }
 
     render() {
+        const paymentgrey = '../../assets/icons/paymentgrey';
+
         return (
             <div className="NoPaymentBox">
                 <div className="NoPaymentBoxBox" >

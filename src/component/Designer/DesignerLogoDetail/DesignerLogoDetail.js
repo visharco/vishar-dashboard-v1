@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
-
-import comment from '../../../assets/icons/comment.svg';
-import like from '../../../assets/icons/like.svg';
-import view from '../../../assets/icons/view.svg';
 import customer1 from '../../../assets/images/customer1.png';
-
 import './style.css';
 
 
@@ -14,6 +9,9 @@ class DesignerLogoDetail extends Component {
         this.state = {}
     }
     render() {
+        const comment = '../../../assets/icons/comment';
+        const like = '../../../assets/icons/like';
+        const view = '../../../assets/icons/view';
         return (
             <div className="DesignerLogoDetail" >
                 <div className="DLD-right" >
@@ -25,7 +23,7 @@ class DesignerLogoDetail extends Component {
 
                 </div>
                 <p className="DLD-time" >
-                     انتشار داده شده در : 
+                    انتشار داده شده در :
                     <span> '  10:20 ب.ظ  '</span>
                     <span> '  10/10/1398  '</span>
                 </p>
@@ -49,27 +47,3 @@ class DesignerLogoDetail extends Component {
 }
 
 export default DesignerLogoDetail;
-
-
-
-
-/*
-=====================================================================================
-How can use this button : ------->
-
-
-           <DesignerLogoDetail
-                designerviews={this.state.designerviews}
-                designerComments={this.state.designerComments}
-                designerLikes={this.state.designerLikes}
-                designerName={this.state.designerName}
-                designerLevel={this.state.designerLevel}
-                designerPicture={this.state.designerPicture}
-                publishedTime={this.state.designerTime}
-                publishedClock={this.state.publishedClock}
-                />
-
-
-=====================================================================================
-
-*/

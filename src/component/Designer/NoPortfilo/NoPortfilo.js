@@ -27,7 +27,7 @@ class NoPortfilo extends Component {
     }
     createNewProject = () => {
         // browserHistory.push('/projects');
-        window.location='http://vishar.com/projects';
+        window.location='http://ddtarh.ir/projects';
 
     }
 

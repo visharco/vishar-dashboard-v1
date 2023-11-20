@@ -8,7 +8,6 @@ import img1 from '../../../assets/images/img1.png';
 import img2 from '../../../assets/images/img2.png';
 import example1 from '../../../assets/images/example1.png';
 import example2 from '../../../assets/images/example2.png';
-import closethin from '../../../assets/icons/closethin.svg';
 
 //
 //compoents
@@ -26,6 +25,8 @@ class DesignerExample extends Component {
     }
 
     render() {
+        const closethin = '../../../assets/icons/closethin.svg';
+
         return (
             <div className="DesignerExample">
 
@@ -37,7 +38,7 @@ class DesignerExample extends Component {
                         <img src={example1} alt="طرحها" />
                         <img src={example2} alt="طرحها" />
                     </div>
-                    
+
 
                 </div>
 

@@ -125,7 +125,7 @@ class LoginComponent extends Component {
 
         if (res.status === 200) {
             localStorage.setItem('@authorization_vishar', res.data.token);
-            document.cookie = "auth=" + res.data.token+"; path=/; Domain=.vishar.com";
+            document.cookie = "auth=" + res.data.token+"; path=/; Domain=.ddtarh.ir";
            
             window.location.reload();
         }
@@ -238,7 +238,7 @@ class LoginComponent extends Component {
             if (res.status === 200) {
                 await localStorage.setItem('@authorization_vishar', res.data.token);
                 await sessionStorage.setItem('@authorization_vishar', res.data.token)
-                  document.cookie = "auth=" + res.data.token+"; path=/; Domain=.vishar.com";
+                  document.cookie = "auth=" + res.data.token+"; path=/; Domain=.ddtarh.ir";
                 // browserHistory.push('/dashboard');
                 window.location.reload();
             }
@@ -513,7 +513,7 @@ class LoginComponent extends Component {
                     </div>
                  </div>
         
-                <a href="http://www.vishar.com">
+                <a href="http://www.ddtarh.ir">
                     <img src={logo} className="login-logo" alt="لوگو"/>
                 </a>
                 <div className="login-container">
